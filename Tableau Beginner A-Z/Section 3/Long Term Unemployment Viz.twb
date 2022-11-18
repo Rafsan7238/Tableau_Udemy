@@ -251,7 +251,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Long Term Unemployment'>
+    <worksheet name='Long Term Unemployment in USA Between 2005 and 2015'>
       <table>
         <view>
           <datasources>
@@ -312,7 +312,7 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Long Term Unemployment'>
+    <window class='worksheet' maximized='true' name='Long Term Unemployment in USA Between 2005 and 2015'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -349,7 +349,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='384' name='Long Term Unemployment' width='384'>
+    <thumbnail height='384' name='Long Term Unemployment in USA Between 2005 and 2015' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOzdeZRcV33o++85p6p6nueW1JJaky3LlmSDbcxwDTg2XGwusX0hEBYPHoPJ
       Irx4hbys3GRl5ZKEkHt9ucEkIUBewmDATBdsB9vYgI2xZYPlSfM89DxWVddcp845e78/Wl1S
