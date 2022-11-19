@@ -443,6 +443,12 @@
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='ListOfOrders+OrderBreakdown' datatype='table' name='[__tableau_internal_object_id__].[ListOfOrders_08721179A4244CFE8251B56F1D160100]' role='measure' type='quantitative' />
+      <group caption='Action (Country,State)' hidden='true' name='[Action (Country,State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Country]' />
+          <groupfilter function='level-members' level='[State]' />
+        </groupfilter>
+      </group>
       <drill-paths>
         <drill-path name='Geography'>
           <field>[Country]</field>
@@ -536,6 +542,16 @@
       </filter>
     </shared-view>
   </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_D5E0498BC0BC44DD951EC2B7CE099930]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='AmazingMart Sales and Profit Margin' type='sheet' worksheet='Orders Map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='AmazingMart Sales and Profit Margin' />
+      </command>
+    </action>
+  </actions>
   <worksheets>
     <worksheet name='Customer Scatter Plot'>
       <table>
@@ -547,18 +563,27 @@
             <column caption='Profit Margin' datatype='real' name='[Calculation_176836686556831744]' role='measure' type='quantitative'>
               <calculation class='tableau' formula='SUM([Profit])/SUM([Sales])' />
             </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
             <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
             <column datatype='date' name='[Order Date]' role='dimension' type='ordinal' />
             <column datatype='integer' name='[Profit]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Sales]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
             <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
             <column-instance column='[Profit]' derivation='Sum' name='[sum:Profit:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Sales]' derivation='Sum' name='[sum:Sales:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Calculation_176836686556831744]' derivation='User' name='[usr:Calculation_176836686556831744:qk]' pivot='key' type='quantitative' />
             <column-instance column='[Order Date]' derivation='Year' name='[yr:Order Date:ok]' pivot='key' type='ordinal' />
           </datasource-dependencies>
+          <filter class='categorical' column='[federated.13husyx0tyr6931dbzenx05j1tud].[Action (Country,State)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_D5E0498BC0BC44DD951EC2B7CE099930]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Country]' />
+              <groupfilter function='level-members' level='[State]' />
+            </groupfilter>
+          </filter>
           <slices>
             <column>[federated.13husyx0tyr6931dbzenx05j1tud].[yr:Order Date:ok]</column>
+            <column>[federated.13husyx0tyr6931dbzenx05j1tud].[Action (Country,State)]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -728,8 +753,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='19' param='vert' type-v2='layout-flow' w='98744' x='628' y='1061'>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='23' param='vert' type-v2='layout-flow' w='98744' x='628' y='1061'>
                 <zone h='5570' id='18' type-v2='title' w='98744' x='628' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -858,7 +883,7 @@
           <default-map-tool-selection tool='1' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='3' />
       <simple-id uuid='{5BB2F854-F411-4BDF-9E03-08C0B0818B0E}' />
     </window>
   </windows>
