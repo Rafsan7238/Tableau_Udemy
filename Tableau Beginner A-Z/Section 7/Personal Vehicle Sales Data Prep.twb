@@ -252,11 +252,13 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column datatype='string' name='[COUNTRIES]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country' datatype='string' name='[COUNTRIES]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column datatype='real' hidden='true' name='[F3]' role='measure' type='quantitative' />
       <column datatype='real' hidden='true' name='[F4]' role='measure' type='quantitative' />
       <column datatype='integer' hidden='true' name='[F5]' role='measure' type='quantitative' />
-      <column caption='YEAR' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Vehicles Sold' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <column caption='Region' datatype='string' name='[REGIONS]' role='dimension' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='pc_sales' datatype='table' name='[__tableau_internal_object_id__].[pc!sales_387E4CFE57794B63B7D5B21000180274]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
