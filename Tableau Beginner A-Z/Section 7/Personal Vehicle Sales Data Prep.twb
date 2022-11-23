@@ -28,43 +28,107 @@
             <connection class='excel-direct' cleaning='yes' compat='no' dataRefreshTime='' filename='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Beginner A-Z/Section 7/P1-PersonalVehicleSalesGlobal.xlsx' interpretationMode='1' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
-          <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
-            <column datatype='string' name='REGIONS' ordinal='0' />
-            <column datatype='string' name='COUNTRIES' ordinal='1' />
-            <column datatype='real' name='F3' ordinal='2' />
-            <column datatype='real' name='F4' ordinal='3' />
-            <column datatype='integer' name='F5' ordinal='4' />
-            <column datatype='integer' name='2005' ordinal='5' />
-            <column datatype='integer' name='2006' ordinal='6' />
-            <column datatype='integer' name='2007' ordinal='7' />
-            <column datatype='integer' name='2008' ordinal='8' />
-            <column datatype='integer' name='2009' ordinal='9' />
-            <column datatype='integer' name='2010' ordinal='10' />
-            <column datatype='integer' name='2011' ordinal='11' />
-            <column datatype='integer' name='2012' ordinal='12' />
-            <column datatype='integer' name='2013' ordinal='13' />
-            <column datatype='integer' name='2014' ordinal='14' />
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
           </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[2011]' />
+            <value name='[2012]' />
+            <value name='[2013]' />
+            <value name='[2014]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[pc_sales].[2005]' />
+              <field name='[pc_sales].[2006]' />
+              <field name='[pc_sales].[2007]' />
+              <field name='[pc_sales].[2008]' />
+              <field name='[pc_sales].[2009]' />
+              <field name='[pc_sales].[2010]' />
+              <field name='[pc_sales].[2011]' />
+              <field name='[pc_sales].[2012]' />
+              <field name='[pc_sales].[2013]' />
+              <field name='[pc_sales].[2014]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
+            <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
+              <column datatype='string' name='REGIONS' ordinal='0' />
+              <column datatype='string' name='COUNTRIES' ordinal='1' />
+              <column datatype='real' name='F3' ordinal='2' />
+              <column datatype='real' name='F4' ordinal='3' />
+              <column datatype='integer' name='F5' ordinal='4' />
+              <column datatype='integer' name='2005' ordinal='5' />
+              <column datatype='integer' name='2006' ordinal='6' />
+              <column datatype='integer' name='2007' ordinal='7' />
+              <column datatype='integer' name='2008' ordinal='8' />
+              <column datatype='integer' name='2009' ordinal='9' />
+              <column datatype='integer' name='2010' ordinal='10' />
+              <column datatype='integer' name='2011' ordinal='11' />
+              <column datatype='integer' name='2012' ordinal='12' />
+              <column datatype='integer' name='2013' ordinal='13' />
+              <column datatype='integer' name='2014' ordinal='14' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
-          <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
-            <column datatype='string' name='REGIONS' ordinal='0' />
-            <column datatype='string' name='COUNTRIES' ordinal='1' />
-            <column datatype='real' name='F3' ordinal='2' />
-            <column datatype='real' name='F4' ordinal='3' />
-            <column datatype='integer' name='F5' ordinal='4' />
-            <column datatype='integer' name='2005' ordinal='5' />
-            <column datatype='integer' name='2006' ordinal='6' />
-            <column datatype='integer' name='2007' ordinal='7' />
-            <column datatype='integer' name='2008' ordinal='8' />
-            <column datatype='integer' name='2009' ordinal='9' />
-            <column datatype='integer' name='2010' ordinal='10' />
-            <column datatype='integer' name='2011' ordinal='11' />
-            <column datatype='integer' name='2012' ordinal='12' />
-            <column datatype='integer' name='2013' ordinal='13' />
-            <column datatype='integer' name='2014' ordinal='14' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
           </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[2005]' />
+            <value name='[2006]' />
+            <value name='[2007]' />
+            <value name='[2008]' />
+            <value name='[2009]' />
+            <value name='[2010]' />
+            <value name='[2011]' />
+            <value name='[2012]' />
+            <value name='[2013]' />
+            <value name='[2014]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[pc_sales].[2005]' />
+              <field name='[pc_sales].[2006]' />
+              <field name='[pc_sales].[2007]' />
+              <field name='[pc_sales].[2008]' />
+              <field name='[pc_sales].[2009]' />
+              <field name='[pc_sales].[2010]' />
+              <field name='[pc_sales].[2011]' />
+              <field name='[pc_sales].[2012]' />
+              <field name='[pc_sales].[2013]' />
+              <field name='[pc_sales].[2014]' />
+            </group>
+          </groups>
+          <relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
+            <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
+              <column datatype='string' name='REGIONS' ordinal='0' />
+              <column datatype='string' name='COUNTRIES' ordinal='1' />
+              <column datatype='real' name='F3' ordinal='2' />
+              <column datatype='real' name='F4' ordinal='3' />
+              <column datatype='integer' name='F5' ordinal='4' />
+              <column datatype='integer' name='2005' ordinal='5' />
+              <column datatype='integer' name='2006' ordinal='6' />
+              <column datatype='integer' name='2007' ordinal='7' />
+              <column datatype='integer' name='2008' ordinal='8' />
+              <column datatype='integer' name='2009' ordinal='9' />
+              <column datatype='integer' name='2010' ordinal='10' />
+              <column datatype='integer' name='2011' ordinal='11' />
+              <column datatype='integer' name='2012' ordinal='12' />
+              <column datatype='integer' name='2013' ordinal='13' />
+              <column datatype='integer' name='2014' ordinal='14' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
           <metadata-record class='capability'>
@@ -162,153 +226,27 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>2005</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2005]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2005</remote-alias>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
             <ordinal>5</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>2006</remote-name>
+            <remote-name>Pivot Field Values</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[2006]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2006</remote-alias>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
             <ordinal>6</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2007</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2007]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2007</remote-alias>
-            <ordinal>7</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2008</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2008]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2008</remote-alias>
-            <ordinal>8</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2009</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2009]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2009</remote-alias>
-            <ordinal>9</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2010</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2010]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2010</remote-alias>
-            <ordinal>10</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2011</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2011]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2011</remote-alias>
-            <ordinal>11</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2012</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2012]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2012</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2013</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2013]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2013</remote-alias>
-            <ordinal>13</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>2014</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[2014]</local-name>
-            <parent-name>[pc_sales]</parent-name>
-            <remote-alias>2014</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[pc!sales_387E4CFE57794B63B7D5B21000180274]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
         </metadata-records>
@@ -318,6 +256,7 @@
       <column datatype='real' hidden='true' name='[F3]' role='measure' type='quantitative' />
       <column datatype='real' hidden='true' name='[F4]' role='measure' type='quantitative' />
       <column datatype='integer' hidden='true' name='[F5]' role='measure' type='quantitative' />
+      <column caption='YEAR' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='pc_sales' datatype='table' name='[__tableau_internal_object_id__].[pc!sales_387E4CFE57794B63B7D5B21000180274]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
@@ -327,24 +266,56 @@
         <objects>
           <object caption='pc_sales' id='pc!sales_387E4CFE57794B63B7D5B21000180274'>
             <properties context=''>
-              <relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
-                <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
-                  <column datatype='string' name='REGIONS' ordinal='0' />
-                  <column datatype='string' name='COUNTRIES' ordinal='1' />
-                  <column datatype='real' name='F3' ordinal='2' />
-                  <column datatype='real' name='F4' ordinal='3' />
-                  <column datatype='integer' name='F5' ordinal='4' />
-                  <column datatype='integer' name='2005' ordinal='5' />
-                  <column datatype='integer' name='2006' ordinal='6' />
-                  <column datatype='integer' name='2007' ordinal='7' />
-                  <column datatype='integer' name='2008' ordinal='8' />
-                  <column datatype='integer' name='2009' ordinal='9' />
-                  <column datatype='integer' name='2010' ordinal='10' />
-                  <column datatype='integer' name='2011' ordinal='11' />
-                  <column datatype='integer' name='2012' ordinal='12' />
-                  <column datatype='integer' name='2013' ordinal='13' />
-                  <column datatype='integer' name='2014' ordinal='14' />
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
                 </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[2005]' />
+                  <value name='[2006]' />
+                  <value name='[2007]' />
+                  <value name='[2008]' />
+                  <value name='[2009]' />
+                  <value name='[2010]' />
+                  <value name='[2011]' />
+                  <value name='[2012]' />
+                  <value name='[2013]' />
+                  <value name='[2014]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[pc_sales].[2005]' />
+                    <field name='[pc_sales].[2006]' />
+                    <field name='[pc_sales].[2007]' />
+                    <field name='[pc_sales].[2008]' />
+                    <field name='[pc_sales].[2009]' />
+                    <field name='[pc_sales].[2010]' />
+                    <field name='[pc_sales].[2011]' />
+                    <field name='[pc_sales].[2012]' />
+                    <field name='[pc_sales].[2013]' />
+                    <field name='[pc_sales].[2014]' />
+                  </group>
+                </groups>
+                <relation connection='excel-direct.0akyto31r02qmj16uu2ni08ncrjo' name='pc_sales' table='[pc_sales$]' type='table'>
+                  <columns gridOrigin='A2:O149:no:A2:O149:1' header='yes' lost='0' outcome='1' processed='1441'>
+                    <column datatype='string' name='REGIONS' ordinal='0' />
+                    <column datatype='string' name='COUNTRIES' ordinal='1' />
+                    <column datatype='real' name='F3' ordinal='2' />
+                    <column datatype='real' name='F4' ordinal='3' />
+                    <column datatype='integer' name='F5' ordinal='4' />
+                    <column datatype='integer' name='2005' ordinal='5' />
+                    <column datatype='integer' name='2006' ordinal='6' />
+                    <column datatype='integer' name='2007' ordinal='7' />
+                    <column datatype='integer' name='2008' ordinal='8' />
+                    <column datatype='integer' name='2009' ordinal='9' />
+                    <column datatype='integer' name='2010' ordinal='10' />
+                    <column datatype='integer' name='2011' ordinal='11' />
+                    <column datatype='integer' name='2012' ordinal='12' />
+                    <column datatype='integer' name='2013' ordinal='13' />
+                    <column datatype='integer' name='2014' ordinal='14' />
+                  </columns>
+                </relation>
               </relation>
             </properties>
           </object>
