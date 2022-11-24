@@ -11,6 +11,7 @@
     <SavingAnalyticObjects />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
+    <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
   <preferences>
@@ -627,6 +628,167 @@
       <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' hidden='true' name='[Location]' role='dimension' type='nominal' />
       <column datatype='integer' name='[Marketing Spend]' role='measure' type='quantitative' />
+      <column caption='Our Clusters' datatype='string' name='[New Expansion &amp; Store ID (clusters)]' parent-model='[AnalyticModel:{7a750916-1057-4d1b-b782-8a1d9cbc2f43}]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[New Expansion &amp; Store ID]' default='&quot;Not Clustered&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Cluster 1&quot;'>
+            <value>(&quot;New&quot;,143)</value>
+            <value>(&quot;New&quot;,146)</value>
+            <value>(&quot;New&quot;,148)</value>
+            <value>(&quot;New&quot;,150)</value>
+            <value>(&quot;Old&quot;,2)</value>
+            <value>(&quot;Old&quot;,4)</value>
+            <value>(&quot;Old&quot;,19)</value>
+            <value>(&quot;Old&quot;,21)</value>
+            <value>(&quot;Old&quot;,27)</value>
+            <value>(&quot;Old&quot;,29)</value>
+            <value>(&quot;Old&quot;,34)</value>
+            <value>(&quot;Old&quot;,39)</value>
+            <value>(&quot;Old&quot;,41)</value>
+            <value>(&quot;Old&quot;,44)</value>
+            <value>(&quot;Old&quot;,46)</value>
+            <value>(&quot;Old&quot;,47)</value>
+            <value>(&quot;Old&quot;,49)</value>
+            <value>(&quot;Old&quot;,50)</value>
+            <value>(&quot;Old&quot;,52)</value>
+            <value>(&quot;Old&quot;,56)</value>
+            <value>(&quot;Old&quot;,57)</value>
+            <value>(&quot;Old&quot;,61)</value>
+            <value>(&quot;Old&quot;,62)</value>
+            <value>(&quot;Old&quot;,66)</value>
+            <value>(&quot;Old&quot;,68)</value>
+            <value>(&quot;Old&quot;,74)</value>
+            <value>(&quot;Old&quot;,76)</value>
+            <value>(&quot;Old&quot;,77)</value>
+            <value>(&quot;Old&quot;,78)</value>
+            <value>(&quot;Old&quot;,80)</value>
+            <value>(&quot;Old&quot;,85)</value>
+            <value>(&quot;Old&quot;,91)</value>
+            <value>(&quot;Old&quot;,95)</value>
+            <value>(&quot;Old&quot;,96)</value>
+            <value>(&quot;Old&quot;,98)</value>
+            <value>(&quot;Old&quot;,101)</value>
+            <value>(&quot;Old&quot;,102)</value>
+            <value>(&quot;Old&quot;,103)</value>
+            <value>(&quot;Old&quot;,104)</value>
+            <value>(&quot;Old&quot;,105)</value>
+            <value>(&quot;Old&quot;,111)</value>
+            <value>(&quot;Old&quot;,114)</value>
+            <value>(&quot;Old&quot;,115)</value>
+            <value>(&quot;Old&quot;,118)</value>
+            <value>(&quot;Old&quot;,121)</value>
+            <value>(&quot;Old&quot;,123)</value>
+            <value>(&quot;Old&quot;,127)</value>
+            <value>(&quot;Old&quot;,131)</value>
+            <value>(&quot;Old&quot;,137)</value>
+            <value>(&quot;Old&quot;,139)</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cluster 2&quot;'>
+            <value>(&quot;New&quot;,141)</value>
+            <value>(&quot;New&quot;,142)</value>
+            <value>(&quot;New&quot;,144)</value>
+            <value>(&quot;New&quot;,145)</value>
+            <value>(&quot;New&quot;,147)</value>
+            <value>(&quot;Old&quot;,1)</value>
+            <value>(&quot;Old&quot;,3)</value>
+            <value>(&quot;Old&quot;,5)</value>
+            <value>(&quot;Old&quot;,6)</value>
+            <value>(&quot;Old&quot;,7)</value>
+            <value>(&quot;Old&quot;,9)</value>
+            <value>(&quot;Old&quot;,10)</value>
+            <value>(&quot;Old&quot;,14)</value>
+            <value>(&quot;Old&quot;,17)</value>
+            <value>(&quot;Old&quot;,18)</value>
+            <value>(&quot;Old&quot;,22)</value>
+            <value>(&quot;Old&quot;,23)</value>
+            <value>(&quot;Old&quot;,25)</value>
+            <value>(&quot;Old&quot;,26)</value>
+            <value>(&quot;Old&quot;,28)</value>
+            <value>(&quot;Old&quot;,32)</value>
+            <value>(&quot;Old&quot;,35)</value>
+            <value>(&quot;Old&quot;,38)</value>
+            <value>(&quot;Old&quot;,40)</value>
+            <value>(&quot;Old&quot;,42)</value>
+            <value>(&quot;Old&quot;,45)</value>
+            <value>(&quot;Old&quot;,51)</value>
+            <value>(&quot;Old&quot;,64)</value>
+            <value>(&quot;Old&quot;,67)</value>
+            <value>(&quot;Old&quot;,72)</value>
+            <value>(&quot;Old&quot;,75)</value>
+            <value>(&quot;Old&quot;,81)</value>
+            <value>(&quot;Old&quot;,82)</value>
+            <value>(&quot;Old&quot;,87)</value>
+            <value>(&quot;Old&quot;,90)</value>
+            <value>(&quot;Old&quot;,92)</value>
+            <value>(&quot;Old&quot;,94)</value>
+            <value>(&quot;Old&quot;,108)</value>
+            <value>(&quot;Old&quot;,109)</value>
+            <value>(&quot;Old&quot;,110)</value>
+            <value>(&quot;Old&quot;,113)</value>
+            <value>(&quot;Old&quot;,117)</value>
+            <value>(&quot;Old&quot;,119)</value>
+            <value>(&quot;Old&quot;,120)</value>
+            <value>(&quot;Old&quot;,122)</value>
+            <value>(&quot;Old&quot;,128)</value>
+            <value>(&quot;Old&quot;,129)</value>
+            <value>(&quot;Old&quot;,133)</value>
+            <value>(&quot;Old&quot;,135)</value>
+            <value>(&quot;Old&quot;,140)</value>
+          </bin>
+          <bin default-name='false' value='&quot;Cluster 3&quot;'>
+            <value>(&quot;New&quot;,149)</value>
+            <value>(&quot;Old&quot;,8)</value>
+            <value>(&quot;Old&quot;,11)</value>
+            <value>(&quot;Old&quot;,12)</value>
+            <value>(&quot;Old&quot;,13)</value>
+            <value>(&quot;Old&quot;,15)</value>
+            <value>(&quot;Old&quot;,16)</value>
+            <value>(&quot;Old&quot;,20)</value>
+            <value>(&quot;Old&quot;,24)</value>
+            <value>(&quot;Old&quot;,30)</value>
+            <value>(&quot;Old&quot;,31)</value>
+            <value>(&quot;Old&quot;,33)</value>
+            <value>(&quot;Old&quot;,36)</value>
+            <value>(&quot;Old&quot;,37)</value>
+            <value>(&quot;Old&quot;,43)</value>
+            <value>(&quot;Old&quot;,48)</value>
+            <value>(&quot;Old&quot;,53)</value>
+            <value>(&quot;Old&quot;,54)</value>
+            <value>(&quot;Old&quot;,55)</value>
+            <value>(&quot;Old&quot;,58)</value>
+            <value>(&quot;Old&quot;,59)</value>
+            <value>(&quot;Old&quot;,60)</value>
+            <value>(&quot;Old&quot;,63)</value>
+            <value>(&quot;Old&quot;,65)</value>
+            <value>(&quot;Old&quot;,69)</value>
+            <value>(&quot;Old&quot;,70)</value>
+            <value>(&quot;Old&quot;,71)</value>
+            <value>(&quot;Old&quot;,73)</value>
+            <value>(&quot;Old&quot;,79)</value>
+            <value>(&quot;Old&quot;,83)</value>
+            <value>(&quot;Old&quot;,84)</value>
+            <value>(&quot;Old&quot;,86)</value>
+            <value>(&quot;Old&quot;,88)</value>
+            <value>(&quot;Old&quot;,89)</value>
+            <value>(&quot;Old&quot;,93)</value>
+            <value>(&quot;Old&quot;,97)</value>
+            <value>(&quot;Old&quot;,99)</value>
+            <value>(&quot;Old&quot;,100)</value>
+            <value>(&quot;Old&quot;,106)</value>
+            <value>(&quot;Old&quot;,107)</value>
+            <value>(&quot;Old&quot;,112)</value>
+            <value>(&quot;Old&quot;,116)</value>
+            <value>(&quot;Old&quot;,124)</value>
+            <value>(&quot;Old&quot;,125)</value>
+            <value>(&quot;Old&quot;,126)</value>
+            <value>(&quot;Old&quot;,130)</value>
+            <value>(&quot;Old&quot;,132)</value>
+            <value>(&quot;Old&quot;,134)</value>
+            <value>(&quot;Old&quot;,136)</value>
+            <value>(&quot;Old&quot;,138)</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[New Expansion]' role='dimension' type='nominal' />
       <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
       <column datatype='string' name='[Sales Region &amp; State (group)]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
         <calculation class='categorical-bin' column='[Sales Region &amp; State]' default='&quot;Other&quot;' new-bin='true'>
@@ -651,9 +813,17 @@
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column datatype='integer' name='[Store ID]' role='dimension' type='ordinal' />
       <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_11A1A21E8FF94F8BAB7E034F778A5211]' role='measure' type='quantitative' />
+      <column-instance column='[New Expansion]' derivation='None' name='[none:New Expansion:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Store ID]' derivation='None' name='[none:Store ID:ok]' pivot='key' type='ordinal' />
       <column-instance column='[2015 estimate]' derivation='Sum' name='[sum:2015 estimate:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Marketing Spend]' derivation='Sum' name='[sum:Marketing Spend:qk]' pivot='key' type='quantitative' />
       <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+      <group auto-hidden='true' hidden='true' name='[New Expansion &amp; Store ID]' name-style='unqualified'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:New Expansion:nk]' />
+          <groupfilter function='level-members' level='[none:Store ID:ok]' />
+        </groupfilter>
+      </group>
       <group auto-hidden='true' hidden='true' name='[Sales Region &amp; State]' name-style='unqualified'>
         <groupfilter function='crossjoin'>
           <groupfilter function='level-members' level='[Sales Region]' />
@@ -694,6 +864,16 @@
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
+      <default-sorts>
+        <manual-sort column='[New Expansion &amp; Store ID (clusters)]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Cluster 1&quot;</bucket>
+            <bucket>&quot;Cluster 2&quot;</bucket>
+            <bucket>&quot;Cluster 3&quot;</bucket>
+            <bucket>&quot;Not Clustered&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
       <analytic-model>
         <name>
           <field name='[AnalyticModel:{2b00088f-10fe-4297-b9bf-959e43ce2274}]' />
@@ -722,6 +902,26 @@
           </analysis-fields>
           <filter-fields />
           <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{7a750916-1057-4d1b-b782-8a1d9cbc2f43}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.0uya8q60uam42014crtls0zhxz92].[sum:Marketing Spend:qk]' />
+            <field name='[federated.0uya8q60uam42014crtls0zhxz92].[sum:Revenue:qk]' />
+            <field name='[federated.0uya8q60uam42014crtls0zhxz92].[sum:2015 estimate:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields>
+            <field name='[federated.0uya8q60uam42014crtls0zhxz92].[none:New Expansion:nk]' />
+            <field name='[federated.0uya8q60uam42014crtls0zhxz92].[none:Store ID:ok]' />
+          </lod-fields>
           <number-of-desired-clusters>0</number-of-desired-clusters>
           <is-dissagregate>false</is-dissagregate>
         </analytic-model-specifications>
@@ -779,6 +979,211 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
+    <worksheet name='Avg. Population Per Cluster'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Combined Dataset' name='federated.0uya8q60uam42014crtls0zhxz92' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0uya8q60uam42014crtls0zhxz92'>
+            <column caption='Population' datatype='integer' name='[2015 estimate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Marketing Spend]' role='measure' type='quantitative' />
+            <column caption='Our Clusters' datatype='string' name='[New Expansion &amp; Store ID (clusters)]' parent-model='[AnalyticModel:{7a750916-1057-4d1b-b782-8a1d9cbc2f43}]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[New Expansion &amp; Store ID]' default='&quot;Not Clustered&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Cluster 1&quot;'>
+                  <value>(&quot;New&quot;,143)</value>
+                  <value>(&quot;New&quot;,146)</value>
+                  <value>(&quot;New&quot;,148)</value>
+                  <value>(&quot;New&quot;,150)</value>
+                  <value>(&quot;Old&quot;,2)</value>
+                  <value>(&quot;Old&quot;,4)</value>
+                  <value>(&quot;Old&quot;,19)</value>
+                  <value>(&quot;Old&quot;,21)</value>
+                  <value>(&quot;Old&quot;,27)</value>
+                  <value>(&quot;Old&quot;,29)</value>
+                  <value>(&quot;Old&quot;,34)</value>
+                  <value>(&quot;Old&quot;,39)</value>
+                  <value>(&quot;Old&quot;,41)</value>
+                  <value>(&quot;Old&quot;,44)</value>
+                  <value>(&quot;Old&quot;,46)</value>
+                  <value>(&quot;Old&quot;,47)</value>
+                  <value>(&quot;Old&quot;,49)</value>
+                  <value>(&quot;Old&quot;,50)</value>
+                  <value>(&quot;Old&quot;,52)</value>
+                  <value>(&quot;Old&quot;,56)</value>
+                  <value>(&quot;Old&quot;,57)</value>
+                  <value>(&quot;Old&quot;,61)</value>
+                  <value>(&quot;Old&quot;,62)</value>
+                  <value>(&quot;Old&quot;,66)</value>
+                  <value>(&quot;Old&quot;,68)</value>
+                  <value>(&quot;Old&quot;,74)</value>
+                  <value>(&quot;Old&quot;,76)</value>
+                  <value>(&quot;Old&quot;,77)</value>
+                  <value>(&quot;Old&quot;,78)</value>
+                  <value>(&quot;Old&quot;,80)</value>
+                  <value>(&quot;Old&quot;,85)</value>
+                  <value>(&quot;Old&quot;,91)</value>
+                  <value>(&quot;Old&quot;,95)</value>
+                  <value>(&quot;Old&quot;,96)</value>
+                  <value>(&quot;Old&quot;,98)</value>
+                  <value>(&quot;Old&quot;,101)</value>
+                  <value>(&quot;Old&quot;,102)</value>
+                  <value>(&quot;Old&quot;,103)</value>
+                  <value>(&quot;Old&quot;,104)</value>
+                  <value>(&quot;Old&quot;,105)</value>
+                  <value>(&quot;Old&quot;,111)</value>
+                  <value>(&quot;Old&quot;,114)</value>
+                  <value>(&quot;Old&quot;,115)</value>
+                  <value>(&quot;Old&quot;,118)</value>
+                  <value>(&quot;Old&quot;,121)</value>
+                  <value>(&quot;Old&quot;,123)</value>
+                  <value>(&quot;Old&quot;,127)</value>
+                  <value>(&quot;Old&quot;,131)</value>
+                  <value>(&quot;Old&quot;,137)</value>
+                  <value>(&quot;Old&quot;,139)</value>
+                </bin>
+                <bin default-name='false' value='&quot;Cluster 2&quot;'>
+                  <value>(&quot;New&quot;,141)</value>
+                  <value>(&quot;New&quot;,142)</value>
+                  <value>(&quot;New&quot;,144)</value>
+                  <value>(&quot;New&quot;,145)</value>
+                  <value>(&quot;New&quot;,147)</value>
+                  <value>(&quot;Old&quot;,1)</value>
+                  <value>(&quot;Old&quot;,3)</value>
+                  <value>(&quot;Old&quot;,5)</value>
+                  <value>(&quot;Old&quot;,6)</value>
+                  <value>(&quot;Old&quot;,7)</value>
+                  <value>(&quot;Old&quot;,9)</value>
+                  <value>(&quot;Old&quot;,10)</value>
+                  <value>(&quot;Old&quot;,14)</value>
+                  <value>(&quot;Old&quot;,17)</value>
+                  <value>(&quot;Old&quot;,18)</value>
+                  <value>(&quot;Old&quot;,22)</value>
+                  <value>(&quot;Old&quot;,23)</value>
+                  <value>(&quot;Old&quot;,25)</value>
+                  <value>(&quot;Old&quot;,26)</value>
+                  <value>(&quot;Old&quot;,28)</value>
+                  <value>(&quot;Old&quot;,32)</value>
+                  <value>(&quot;Old&quot;,35)</value>
+                  <value>(&quot;Old&quot;,38)</value>
+                  <value>(&quot;Old&quot;,40)</value>
+                  <value>(&quot;Old&quot;,42)</value>
+                  <value>(&quot;Old&quot;,45)</value>
+                  <value>(&quot;Old&quot;,51)</value>
+                  <value>(&quot;Old&quot;,64)</value>
+                  <value>(&quot;Old&quot;,67)</value>
+                  <value>(&quot;Old&quot;,72)</value>
+                  <value>(&quot;Old&quot;,75)</value>
+                  <value>(&quot;Old&quot;,81)</value>
+                  <value>(&quot;Old&quot;,82)</value>
+                  <value>(&quot;Old&quot;,87)</value>
+                  <value>(&quot;Old&quot;,90)</value>
+                  <value>(&quot;Old&quot;,92)</value>
+                  <value>(&quot;Old&quot;,94)</value>
+                  <value>(&quot;Old&quot;,108)</value>
+                  <value>(&quot;Old&quot;,109)</value>
+                  <value>(&quot;Old&quot;,110)</value>
+                  <value>(&quot;Old&quot;,113)</value>
+                  <value>(&quot;Old&quot;,117)</value>
+                  <value>(&quot;Old&quot;,119)</value>
+                  <value>(&quot;Old&quot;,120)</value>
+                  <value>(&quot;Old&quot;,122)</value>
+                  <value>(&quot;Old&quot;,128)</value>
+                  <value>(&quot;Old&quot;,129)</value>
+                  <value>(&quot;Old&quot;,133)</value>
+                  <value>(&quot;Old&quot;,135)</value>
+                  <value>(&quot;Old&quot;,140)</value>
+                </bin>
+                <bin default-name='false' value='&quot;Cluster 3&quot;'>
+                  <value>(&quot;New&quot;,149)</value>
+                  <value>(&quot;Old&quot;,8)</value>
+                  <value>(&quot;Old&quot;,11)</value>
+                  <value>(&quot;Old&quot;,12)</value>
+                  <value>(&quot;Old&quot;,13)</value>
+                  <value>(&quot;Old&quot;,15)</value>
+                  <value>(&quot;Old&quot;,16)</value>
+                  <value>(&quot;Old&quot;,20)</value>
+                  <value>(&quot;Old&quot;,24)</value>
+                  <value>(&quot;Old&quot;,30)</value>
+                  <value>(&quot;Old&quot;,31)</value>
+                  <value>(&quot;Old&quot;,33)</value>
+                  <value>(&quot;Old&quot;,36)</value>
+                  <value>(&quot;Old&quot;,37)</value>
+                  <value>(&quot;Old&quot;,43)</value>
+                  <value>(&quot;Old&quot;,48)</value>
+                  <value>(&quot;Old&quot;,53)</value>
+                  <value>(&quot;Old&quot;,54)</value>
+                  <value>(&quot;Old&quot;,55)</value>
+                  <value>(&quot;Old&quot;,58)</value>
+                  <value>(&quot;Old&quot;,59)</value>
+                  <value>(&quot;Old&quot;,60)</value>
+                  <value>(&quot;Old&quot;,63)</value>
+                  <value>(&quot;Old&quot;,65)</value>
+                  <value>(&quot;Old&quot;,69)</value>
+                  <value>(&quot;Old&quot;,70)</value>
+                  <value>(&quot;Old&quot;,71)</value>
+                  <value>(&quot;Old&quot;,73)</value>
+                  <value>(&quot;Old&quot;,79)</value>
+                  <value>(&quot;Old&quot;,83)</value>
+                  <value>(&quot;Old&quot;,84)</value>
+                  <value>(&quot;Old&quot;,86)</value>
+                  <value>(&quot;Old&quot;,88)</value>
+                  <value>(&quot;Old&quot;,89)</value>
+                  <value>(&quot;Old&quot;,93)</value>
+                  <value>(&quot;Old&quot;,97)</value>
+                  <value>(&quot;Old&quot;,99)</value>
+                  <value>(&quot;Old&quot;,100)</value>
+                  <value>(&quot;Old&quot;,106)</value>
+                  <value>(&quot;Old&quot;,107)</value>
+                  <value>(&quot;Old&quot;,112)</value>
+                  <value>(&quot;Old&quot;,116)</value>
+                  <value>(&quot;Old&quot;,124)</value>
+                  <value>(&quot;Old&quot;,125)</value>
+                  <value>(&quot;Old&quot;,126)</value>
+                  <value>(&quot;Old&quot;,130)</value>
+                  <value>(&quot;Old&quot;,132)</value>
+                  <value>(&quot;Old&quot;,134)</value>
+                  <value>(&quot;Old&quot;,136)</value>
+                  <value>(&quot;Old&quot;,138)</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[New Expansion]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Revenue]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Store ID]' role='dimension' type='ordinal' />
+            <column-instance column='[2015 estimate]' derivation='Avg' name='[avg:2015 estimate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[New Expansion]' derivation='None' name='[none:New Expansion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Store ID]' derivation='None' name='[none:Store ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[2015 estimate]' derivation='Sum' name='[sum:2015 estimate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Marketing Spend]' derivation='Sum' name='[sum:Marketing Spend:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Revenue]' derivation='Sum' name='[sum:Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0uya8q60uam42014crtls0zhxz92].[New Expansion &amp; Store ID (clusters)]' />
+              <text column='[federated.0uya8q60uam42014crtls0zhxz92].[avg:2015 estimate:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0uya8q60uam42014crtls0zhxz92].[avg:2015 estimate:qk]</rows>
+        <cols>[federated.0uya8q60uam42014crtls0zhxz92].[New Expansion &amp; Store ID (clusters)]</cols>
+      </table>
+      <simple-id uuid='{3C6725ED-FDBD-4234-B877-0C2BCEB53DAC}' />
+    </worksheet>
     <worksheet name='Correlation Between Population and Revenue'>
       <table>
         <view>
@@ -1406,7 +1811,7 @@
       </viewpoint>
       <simple-id uuid='{C899B723-C3C2-4CD3-8E64-71AE337DE807}' />
     </window>
-    <window class='worksheet' maximized='true' name='Correlation Between Population and Revenue'>
+    <window class='worksheet' name='Correlation Between Population and Revenue'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1439,8 +1844,260 @@
       </viewpoint>
       <simple-id uuid='{79BA81D3-737E-4A7E-922E-C115CE1A0D5E}' />
     </window>
+    <window class='worksheet' maximized='true' name='Avg. Population Per Cluster'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0uya8q60uam42014crtls0zhxz92].[New Expansion &amp; Store ID (clusters)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0uya8q60uam42014crtls0zhxz92].[New Expansion &amp; Store ID (clusters)]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45CB8DC4-6169-4BE7-966B-8FA64E78B61F}' />
+    </window>
   </windows>
   <thumbnails>
+    <thumbnail height='384' name='Avg. Population Per Cluster' width='384'>
+      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
+      p6czdepUysrKmDJlSrLHFBG54iU9AH369OGee+4hFovFX37PmzePaDQa3xR0xx13ANC7d296
+      9+6d7BFFRBwh6QGAM9v6v7wN3zCM+IO/iIgkx+W9AVRERBJGARARcSgFQETEoRQAERGHUgBE
+      RBxKARARcSgFQETEoRQAERGHUgBERBxKARARcSgFQETEoRQAERGHUgBERBxKARARcSgFQETE
+      oRQAERGHUgBERBxKARARcSgFQETEoRQAERGHUgBERBxKARARcSgFQETEoRQAERGHUgBERBxK
+      ARARcaiUBMA0TVavXk0wGMS2bT7//HPef/99Tp48CcCBAwcAaG9vj/8sIiKdKyUBWL9+PceO
+      HSMUClFdXc3x48eZPHkyq1evxjRN9uzZQywWY8WKFeTl5aViRBGRK54n2TdYW1tLJBKhX79+
+      AFRWVjJu3DiysrLo3r07gUCAcDhMWVkZ/fr1o2fPngDEYjFs2wbAsiwsy+rUuexOXZp0BdFo
+      hHA4nOoxvpIdiaR6BEmBaDSKlYR1M6kBsCyLdevWMWPGDDZt2oRpmkSjUXw+HwAul4tYLEZb
+      WxsHDx5k2rRpGIYBgG3b8QC4XC48ns4d3ejUpUlX4PV44+ve5Srm9RJN9RCSdB6PB08S1s2k
+      BiAcDpOXl8fGjRs5fPgwsViMoqIijh49Sl5eHi0tLfj9frp3787MmTN59913mTt3LhkZGbjd
+      7vhyTNOMh0Gkwwzj8l+PLvf5JCGMJK2bSQ1ARkYGd9xxBwCbN29mxIgRZGRksGTJEqqqqigq
+      KsLv95OTk4Pf72fq1KmUlZUxZcqUZI4pIuIISd8HcNaNN94Y/3nu3LmYponX6wVg6tSpABQW
+      FlJYWJiS+URErnSXxecADMOIP/iLiEhyXBYBEBGR5FMAREQcSgEQEXEoBUBExKEUABERh1IA
+      REQcSgEQEXEoBUBExKEUABERh1IAREQcSgEQEXEoBUBExKEUABERh1IAREQcSgEQEXEoBUBE
+      xKEUABERh1IAREQcSgEQEXEoBUBExKEUABERh1IAREQcSgEQEXEoBUBExKEUABERh1IAREQc
+      SgEQEXGopAfg+PHjfPDBByxZsoRTp05h2zZlZWUsWbKEI0eOALBr1y4Ampub2bNnT7JHFBFx
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
     <thumbnail height='384' name='Correlation Between Population and Revenue' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOy9eXBc2X3f+znn3tsLGvtGACRAECTBfZuN5CycRZoZebR6tMSyLW+JHdkV
