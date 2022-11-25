@@ -1556,41 +1556,41 @@
       <column caption='Incidents' datatype='integer' name='[TOTAL]' role='measure' type='quantitative' />
       <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='NYC Park Crime Stats Q1 2018 with Geometry' datatype='table' name='[__tableau_internal_object_id__].[Page    1 Table  1_0B4FBA777CF9400D89E4630FB5E876D1]' role='measure' type='quantitative' />
-      <column caption='Acquisitio' datatype='string' name='[acquisitio]' role='dimension' type='nominal' />
-      <column caption='Acres' datatype='real' name='[acres]' role='measure' type='quantitative' />
-      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
-      <column caption='Borough1' datatype='string' name='[borough]' role='dimension' type='nominal' />
-      <column caption='Class' datatype='string' name='[class]' role='dimension' type='nominal' />
-      <column caption='Commission' datatype='string' name='[commission]' role='dimension' type='nominal' />
-      <column caption='Communityb' datatype='string' name='[communityb]' role='dimension' type='nominal' />
-      <column caption='Councildis' datatype='string' name='[councildis]' role='dimension' type='nominal' />
-      <column caption='Department' datatype='string' name='[department]' role='dimension' type='nominal' />
-      <column caption='Eapply' datatype='string' name='[eapply]' role='dimension' type='nominal' />
-      <column caption='Gisobjid' datatype='real' name='[gisobjid]' role='measure' type='quantitative' />
-      <column caption='Gispropnum' datatype='string' name='[gispropnum]' role='dimension' type='nominal' />
-      <column caption='Global Id' datatype='string' name='[global_id]' role='dimension' type='nominal' />
-      <column caption='Jurisdicti' datatype='string' name='[jurisdicti]' role='dimension' type='nominal' />
-      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
-      <column caption='Mapped' datatype='string' name='[mapped]' role='dimension' type='nominal' />
-      <column caption='Name311' datatype='string' name='[name311]' role='dimension' type='nominal' />
-      <column caption='Nys Assemb' datatype='string' name='[nys_assemb]' role='dimension' type='nominal' />
-      <column caption='Nys Senate' datatype='string' name='[nys_senate]' role='dimension' type='nominal' />
-      <column caption='Objectid' datatype='real' name='[objectid]' role='measure' type='quantitative' />
-      <column caption='Omppropid' datatype='string' name='[omppropid]' role='dimension' type='nominal' />
-      <column caption='Parentid' datatype='string' name='[parentid]' role='dimension' type='nominal' />
-      <column caption='Permit' datatype='string' name='[permit]' role='dimension' type='nominal' />
-      <column caption='Permitdist' datatype='string' name='[permitdist]' role='dimension' type='nominal' />
-      <column caption='Permitpare' datatype='string' name='[permitpare]' role='dimension' type='nominal' />
-      <column caption='Pip Ratabl' datatype='string' name='[pip_ratabl]' role='dimension' type='nominal' />
-      <column caption='Precinct' datatype='string' name='[precinct]' role='dimension' type='nominal' />
-      <column caption='Retired' datatype='string' name='[retired]' role='dimension' type='nominal' />
-      <column caption='Signname' datatype='string' name='[signname]' role='dimension' type='nominal' />
-      <column caption='Subcategor' datatype='string' name='[subcategor]' role='dimension' type='nominal' />
-      <column caption='Typecatego' datatype='string' name='[typecatego]' role='dimension' type='nominal' />
-      <column caption='Url' datatype='string' name='[url]' role='dimension' type='nominal' />
-      <column caption='Us Congres' datatype='string' name='[us_congres]' role='dimension' type='nominal' />
-      <column caption='Waterfront' datatype='string' name='[waterfront]' role='dimension' type='nominal' />
-      <column caption='Zipcode' datatype='string' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Acquisitio' datatype='string' hidden='true' name='[acquisitio]' role='dimension' type='nominal' />
+      <column caption='Acres' datatype='real' hidden='true' name='[acres]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' hidden='true' name='[address]' role='dimension' type='nominal' />
+      <column caption='City Borough' datatype='string' name='[borough]' role='dimension' type='nominal' />
+      <column caption='Class' datatype='string' hidden='true' name='[class]' role='dimension' type='nominal' />
+      <column caption='Commission' datatype='string' hidden='true' name='[commission]' role='dimension' type='nominal' />
+      <column caption='Communityb' datatype='string' hidden='true' name='[communityb]' role='dimension' type='nominal' />
+      <column caption='Councildis' datatype='string' hidden='true' name='[councildis]' role='dimension' type='nominal' />
+      <column caption='Department' datatype='string' hidden='true' name='[department]' role='dimension' type='nominal' />
+      <column caption='Eapply' datatype='string' hidden='true' name='[eapply]' role='dimension' type='nominal' />
+      <column caption='Gisobjid' datatype='real' hidden='true' name='[gisobjid]' role='measure' type='quantitative' />
+      <column caption='Gispropnum' datatype='string' hidden='true' name='[gispropnum]' role='dimension' type='nominal' />
+      <column caption='Global Id' datatype='string' hidden='true' name='[global_id]' role='dimension' type='nominal' />
+      <column caption='Jurisdicti' datatype='string' hidden='true' name='[jurisdicti]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' hidden='true' name='[location]' role='dimension' type='nominal' />
+      <column caption='Mapped' datatype='string' hidden='true' name='[mapped]' role='dimension' type='nominal' />
+      <column caption='Park Name' datatype='string' name='[name311]' role='dimension' type='nominal' />
+      <column caption='Nys Assemb' datatype='string' hidden='true' name='[nys_assemb]' role='dimension' type='nominal' />
+      <column caption='Nys Senate' datatype='string' hidden='true' name='[nys_senate]' role='dimension' type='nominal' />
+      <column caption='Objectid' datatype='real' hidden='true' name='[objectid]' role='measure' type='quantitative' />
+      <column caption='Omppropid' datatype='string' hidden='true' name='[omppropid]' role='dimension' type='nominal' />
+      <column caption='Parentid' datatype='string' hidden='true' name='[parentid]' role='dimension' type='nominal' />
+      <column caption='Permit' datatype='string' hidden='true' name='[permit]' role='dimension' type='nominal' />
+      <column caption='Permitdist' datatype='string' hidden='true' name='[permitdist]' role='dimension' type='nominal' />
+      <column caption='Permitpare' datatype='string' hidden='true' name='[permitpare]' role='dimension' type='nominal' />
+      <column caption='Pip Ratabl' datatype='string' hidden='true' name='[pip_ratabl]' role='dimension' type='nominal' />
+      <column caption='Precinct' datatype='string' hidden='true' name='[precinct]' role='dimension' type='nominal' />
+      <column caption='Retired' datatype='string' hidden='true' name='[retired]' role='dimension' type='nominal' />
+      <column caption='Signname' datatype='string' hidden='true' name='[signname]' role='dimension' type='nominal' />
+      <column caption='Subcategor' datatype='string' hidden='true' name='[subcategor]' role='dimension' type='nominal' />
+      <column caption='Typecatego' datatype='string' hidden='true' name='[typecatego]' role='dimension' type='nominal' />
+      <column caption='Url' datatype='string' hidden='true' name='[url]' role='dimension' type='nominal' />
+      <column caption='Us Congres' datatype='string' hidden='true' name='[us_congres]' role='dimension' type='nominal' />
+      <column caption='Waterfront' datatype='string' hidden='true' name='[waterfront]' role='dimension' type='nominal' />
+      <column caption='Zipcode' datatype='string' hidden='true' name='[zipcode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
@@ -2080,7 +2080,7 @@
             <column caption='Incidents' datatype='integer' name='[TOTAL]' role='measure' type='quantitative' />
             <_.fcp.ObjectModelTableType.true...column caption='NYC Park Crime Stats Q1 2018 with Geometry' datatype='table' name='[__tableau_internal_object_id__].[Page    1 Table  1_0B4FBA777CF9400D89E4630FB5E876D1]' role='measure' type='quantitative' />
             <column-instance column='[__tableau_internal_object_id__].[Page    1 Table  1_0B4FBA777CF9400D89E4630FB5E876D1]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Page    1 Table  1_0B4FBA777CF9400D89E4630FB5E876D1:qk]' pivot='key' type='quantitative' />
-            <column caption='Name311' datatype='string' name='[name311]' role='dimension' type='nominal' />
+            <column caption='Park Name' datatype='string' name='[name311]' role='dimension' type='nominal' />
             <column-instance column='[Park &amp; F1]' derivation='None' name='[none:Park &amp; F1:nk]' pivot='key' type='nominal' />
             <column-instance column='[name311]' derivation='None' name='[none:name311:nk]' pivot='key' type='nominal' />
             <column-instance column='[TOTAL]' derivation='Sum' name='[sum:TOTAL:qk]' pivot='key' type='quantitative' />
