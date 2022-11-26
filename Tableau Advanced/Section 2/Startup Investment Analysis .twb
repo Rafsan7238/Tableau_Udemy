@@ -637,7 +637,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Startup Industries Per Year '>
+    <worksheet name='Avg Employee Per Startup Industry'>
       <table>
         <view>
           <datasources>
@@ -761,7 +761,7 @@
       </viewpoint>
       <simple-id uuid='{D4A21EC9-8F8B-4CCC-B305-BF8006EB7B88}' />
     </window>
-    <window class='worksheet' maximized='true' name='Startup Industries Per Year '>
+    <window class='worksheet' maximized='true' name='Avg Employee Per Startup Industry'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -794,7 +794,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='384' name='Startup Industries Per Year ' width='384'>
+    <thumbnail height='384' name='Avg Employee Per Startup Industry' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nOzdd3gV553o8e+cql6OjiTUJUAIJIQkQKaYaogpxsYGx3EcCLFjx+vsZjdl
       N3ezuXke3/vcTZ672d3sbrxZ57k3N6G4YBuwaDYdRC9CDYQEqqj3dnqZuX9oNcuxqDboAHo/
