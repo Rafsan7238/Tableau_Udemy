@@ -1,0 +1,689 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.0624.2136                               -->
+<workbook original-version='18.1' source-build='2022.2.0 (20222.22.0624.2136)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Overview+ (P11-1000-Startups)' inline='true' name='federated.0uhxgqz0ivzgql167awwj0285jdf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='P11-1000-Startups' name='excel-direct.14jjl8509v9vgo11eore70xsk48z'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 2/P11-1000-Startups.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Overview].[ID]' />
+              <expression op='[Financials].[ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Overview' table='[Overview$]' type='table'>
+            <columns gridOrigin='A1:I1001:no:A1:I1001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='string' name='Industry' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='integer' name='Year Founded' ordinal='4' />
+              <column datatype='integer' name='Employees' ordinal='5' />
+              <column datatype='string' name='State' ordinal='6' />
+              <column datatype='string' name='City' ordinal='7' />
+              <column datatype='string' name='Metro Area' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Financials' table='[Financials$]' type='table'>
+            <columns gridOrigin='A1:M1001:no:A1:M1001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='real' name='2015 Revenue' ordinal='2' />
+              <column datatype='real' name='2015 Expenses' ordinal='3' />
+              <column datatype='real' name='2015 Profit' ordinal='4' />
+              <column datatype='real' name='2015 Growth %' ordinal='5' />
+              <column datatype='integer' name='2014 Revenue' ordinal='6' />
+              <column datatype='real' name='2014 Expenses' ordinal='7' />
+              <column datatype='real' name='2014 Profit' ordinal='8' />
+              <column datatype='real' name='2014 Growth %' ordinal='9' />
+              <column datatype='real' name='2013 Revenue' ordinal='10' />
+              <column datatype='real' name='2013 Expenses' ordinal='11' />
+              <column datatype='real' name='2013 Profit' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Overview].[ID]' />
+              <expression op='[Financials].[ID]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Overview' table='[Overview$]' type='table'>
+            <columns gridOrigin='A1:I1001:no:A1:I1001:0' header='yes' outcome='2'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='string' name='Industry' ordinal='2' />
+              <column datatype='string' name='Description' ordinal='3' />
+              <column datatype='integer' name='Year Founded' ordinal='4' />
+              <column datatype='integer' name='Employees' ordinal='5' />
+              <column datatype='string' name='State' ordinal='6' />
+              <column datatype='string' name='City' ordinal='7' />
+              <column datatype='string' name='Metro Area' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Financials' table='[Financials$]' type='table'>
+            <columns gridOrigin='A1:M1001:no:A1:M1001:0' header='yes' outcome='6'>
+              <column datatype='integer' name='ID' ordinal='0' />
+              <column datatype='string' name='Name' ordinal='1' />
+              <column datatype='real' name='2015 Revenue' ordinal='2' />
+              <column datatype='real' name='2015 Expenses' ordinal='3' />
+              <column datatype='real' name='2015 Profit' ordinal='4' />
+              <column datatype='real' name='2015 Growth %' ordinal='5' />
+              <column datatype='integer' name='2014 Revenue' ordinal='6' />
+              <column datatype='real' name='2014 Expenses' ordinal='7' />
+              <column datatype='real' name='2014 Profit' ordinal='8' />
+              <column datatype='real' name='2014 Growth %' ordinal='9' />
+              <column datatype='real' name='2013 Revenue' ordinal='10' />
+              <column datatype='real' name='2013 Expenses' ordinal='11' />
+              <column datatype='real' name='2013 Profit' ordinal='12' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[2013 Expenses]' value='[Financials].[2013 Expenses]' />
+          <map key='[2013 Profit]' value='[Financials].[2013 Profit]' />
+          <map key='[2013 Revenue]' value='[Financials].[2013 Revenue]' />
+          <map key='[2014 Expenses]' value='[Financials].[2014 Expenses]' />
+          <map key='[2014 Growth %]' value='[Financials].[2014 Growth %]' />
+          <map key='[2014 Profit]' value='[Financials].[2014 Profit]' />
+          <map key='[2014 Revenue]' value='[Financials].[2014 Revenue]' />
+          <map key='[2015 Expenses]' value='[Financials].[2015 Expenses]' />
+          <map key='[2015 Growth %]' value='[Financials].[2015 Growth %]' />
+          <map key='[2015 Profit]' value='[Financials].[2015 Profit]' />
+          <map key='[2015 Revenue]' value='[Financials].[2015 Revenue]' />
+          <map key='[City]' value='[Overview].[City]' />
+          <map key='[Description]' value='[Overview].[Description]' />
+          <map key='[Employees]' value='[Overview].[Employees]' />
+          <map key='[ID (Financials)]' value='[Financials].[ID]' />
+          <map key='[ID]' value='[Overview].[ID]' />
+          <map key='[Industry]' value='[Overview].[Industry]' />
+          <map key='[Metro Area]' value='[Overview].[Metro Area]' />
+          <map key='[Name (Financials)]' value='[Financials].[Name]' />
+          <map key='[Name]' value='[Overview].[Name]' />
+          <map key='[State]' value='[Overview].[State]' />
+          <map key='[Year Founded]' value='[Overview].[Year Founded]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I1001:no:A1:I1001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M1001:no:A1:M1001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Industry]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Industry</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Description</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Description]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Founded</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Founded]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Year Founded</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employees</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employees]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Employees</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Metro Area</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Metro Area]</local-name>
+            <parent-name>[Overview]</parent-name>
+            <remote-alias>Metro Area</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (Financials)]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Name (Financials)]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Revenue]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2015 Revenue</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Expenses]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2015 Expenses</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Profit]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2015 Profit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2015 Growth %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2015 Growth %]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2015 Growth %</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[2014 Revenue]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2014 Revenue</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014 Expenses]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2014 Expenses</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014 Profit]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2014 Profit</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2014 Growth %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2014 Growth %]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2014 Growth %</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013 Revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2013 Revenue]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2013 Revenue</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013 Expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2013 Expenses]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2013 Expenses</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>2013 Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[2013 Profit]</local-name>
+            <parent-name>[Financials]</parent-name>
+            <remote-alias>2013 Profit</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Overview_76141AADCD0C460E8D0628C593D5CA2A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' hidden='true' name='[ID (Financials)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column datatype='string' hidden='true' name='[Name (Financials)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year Founded]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Overview' datatype='table' name='[__tableau_internal_object_id__].[Overview_76141AADCD0C460E8D0628C593D5CA2A]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, City'>
+          <field>[State]</field>
+          <field>[City]</field>
+        </drill-path>
+      </drill-paths>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='2013 Financials' role='measures'>
+        <folder-item name='[2013 Expenses]' type='field' />
+        <folder-item name='[2013 Profit]' type='field' />
+        <folder-item name='[2013 Revenue]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='2014 Financials' role='measures'>
+        <folder-item name='[2014 Expenses]' type='field' />
+        <folder-item name='[2014 Growth %]' type='field' />
+        <folder-item name='[2014 Profit]' type='field' />
+        <folder-item name='[2014 Revenue]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.false...folder name='2015 Financials' role='measures'>
+        <folder-item name='[2015 Expenses]' type='field' />
+        <folder-item name='[2015 Growth %]' type='field' />
+        <folder-item name='[2015 Profit]' type='field' />
+        <folder-item name='[2015 Revenue]' type='field' />
+      </_.fcp.SchemaViewerObjectModel.false...folder>
+      <_.fcp.SchemaViewerObjectModel.true...folders-common>
+        <folder name='2013 Financials'>
+          <folder-item name='[2013 Expenses]' type='field' />
+          <folder-item name='[2013 Profit]' type='field' />
+          <folder-item name='[2013 Revenue]' type='field' />
+        </folder>
+        <folder name='2014 Financials'>
+          <folder-item name='[2014 Expenses]' type='field' />
+          <folder-item name='[2014 Growth %]' type='field' />
+          <folder-item name='[2014 Profit]' type='field' />
+          <folder-item name='[2014 Revenue]' type='field' />
+        </folder>
+        <folder name='2015 Financials'>
+          <folder-item name='[2015 Expenses]' type='field' />
+          <folder-item name='[2015 Growth %]' type='field' />
+          <folder-item name='[2015 Profit]' type='field' />
+          <folder-item name='[2015 Revenue]' type='field' />
+        </folder>
+      </_.fcp.SchemaViewerObjectModel.true...folders-common>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Overview' id='Overview_76141AADCD0C460E8D0628C593D5CA2A'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Overview].[ID]' />
+                    <expression op='[Financials].[ID]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Overview' table='[Overview$]' type='table'>
+                  <columns gridOrigin='A1:I1001:no:A1:I1001:0' header='yes' outcome='2'>
+                    <column datatype='integer' name='ID' ordinal='0' />
+                    <column datatype='string' name='Name' ordinal='1' />
+                    <column datatype='string' name='Industry' ordinal='2' />
+                    <column datatype='string' name='Description' ordinal='3' />
+                    <column datatype='integer' name='Year Founded' ordinal='4' />
+                    <column datatype='integer' name='Employees' ordinal='5' />
+                    <column datatype='string' name='State' ordinal='6' />
+                    <column datatype='string' name='City' ordinal='7' />
+                    <column datatype='string' name='Metro Area' ordinal='8' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.14jjl8509v9vgo11eore70xsk48z' name='Financials' table='[Financials$]' type='table'>
+                  <columns gridOrigin='A1:M1001:no:A1:M1001:0' header='yes' outcome='6'>
+                    <column datatype='integer' name='ID' ordinal='0' />
+                    <column datatype='string' name='Name' ordinal='1' />
+                    <column datatype='real' name='2015 Revenue' ordinal='2' />
+                    <column datatype='real' name='2015 Expenses' ordinal='3' />
+                    <column datatype='real' name='2015 Profit' ordinal='4' />
+                    <column datatype='real' name='2015 Growth %' ordinal='5' />
+                    <column datatype='integer' name='2014 Revenue' ordinal='6' />
+                    <column datatype='real' name='2014 Expenses' ordinal='7' />
+                    <column datatype='real' name='2014 Profit' ordinal='8' />
+                    <column datatype='real' name='2014 Growth %' ordinal='9' />
+                    <column datatype='real' name='2013 Revenue' ordinal='10' />
+                    <column datatype='real' name='2013 Expenses' ordinal='11' />
+                    <column datatype='real' name='2013 Profit' ordinal='12' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{63F376C5-3DCF-4359-8785-00A8C5D82CA4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D4A21EC9-8F8B-4CCC-B305-BF8006EB7B88}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFX0lEQVR4nO3VMQEAIAzAMIZ/z0MGRxMF/Tq7uweAlJmZ+zsCgD8MACDKAACiDAAgygAA
+      ogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDK
+      AACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwA
+      IMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACi
+      DAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoA
+      AKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAg
+      ygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIM
+      ACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAA
+      ogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDK
+      AACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwA
+      IMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACi
+      DAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoA
+      AKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAg
+      ygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIM
+      ACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAA
+      ogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDK
+      AACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwA
+      IMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACi
+      DAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoA
+      AKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAg
+      ygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIM
+      ACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAA
+      ogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDK
+      AACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwA
+      IMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAogwAIMoAAKIMACDKAACi
+      DAAgygAAogwAIMoAAKIMACDKAACiDAAgygAAoh4HPAcAnZVmXAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
