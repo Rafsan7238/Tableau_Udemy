@@ -1597,8 +1597,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='75' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='74' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
+            <zone h='100000' id='77' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='76' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
                 <zone fixed-size='280' h='97878' id='3' is-fixed='true' name='Idle Capacity Moving Avg Per Machine Per Day' show-title='false' w='98780' x='610' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1751,8 +1751,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='63' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='62' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
+            <zone h='100000' id='65' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='64' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
                 <zone fixed-size='280' h='97878' id='20' is-fixed='true' is-scaled='1' param='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 3/P11-Section3-Images/Stockyard.png' type-v2='bitmap' w='38896' x='613' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1914,8 +1914,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='66' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
+            <zone h='100000' id='69' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='68' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
                 <zone fixed-size='280' h='97878' id='20' is-fixed='true' is-scaled='1' param='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 3/P11-Section3-Images/Stockyard.png' type-v2='bitmap' w='38895' x='613' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2027,8 +2027,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='54' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
+            <zone h='100000' id='57' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='56' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
                 <zone forceUpdate='true' h='10080' id='1' type-v2='text' w='98780' x='610' y='1061'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='22'>RECLAIMERS</run>
@@ -2147,8 +2147,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='69' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
+            <zone h='100000' id='72' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='71' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
                 <zone fixed-size='280' h='97878' id='20' is-fixed='true' is-scaled='1' param='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 3/P11-Section3-Images/Stockyard.png' type-v2='bitmap' w='38892' x='613' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2308,8 +2308,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='73' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='72' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
+            <zone h='100000' id='75' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='74' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
                 <zone fixed-size='280' h='97878' id='20' is-fixed='true' is-scaled='1' param='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 3/P11-Section3-Images/Stockyard.png' type-v2='bitmap' w='38891' x='613' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2475,8 +2475,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='800' minheight='800' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='76' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='75' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
+            <zone h='100000' id='78' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='77' param='vert' type-v2='layout-flow' w='98774' x='613' y='1061'>
                 <zone fixed-size='280' h='97878' id='20' is-fixed='true' is-scaled='1' param='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 3/P11-Section3-Images/Stockyard.png' type-v2='bitmap' w='38890' x='613' y='1061'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2592,8 +2592,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='56' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97878' id='55' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
+            <zone h='100000' id='58' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97878' id='57' param='vert' type-v2='layout-flow' w='98780' x='610' y='1061'>
                 <zone forceUpdate='true' h='10080' id='1' type-v2='text' w='98780' x='610' y='1061'>
                   <formatted-text>
                     <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='22'>STACKER-RECLAIMERS</run>
