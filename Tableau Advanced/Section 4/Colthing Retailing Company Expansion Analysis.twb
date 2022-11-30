@@ -28,23 +28,63 @@
             <connection class='textscan' directory='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 4' filename='P11-Competitor-Research.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Company' ordinal='0' />
-            <column datatype='real' name='QLD' ordinal='1' />
-            <column datatype='real' name='WA' ordinal='2' />
-            <column datatype='real' name='VIC' ordinal='3' />
-            <column datatype='real' name='NSW' ordinal='4' />
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
           </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[NSW]' />
+            <value name='[QLD]' />
+            <value name='[VIC]' />
+            <value name='[WA]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[P11-Competitor-Research.csv].[NSW]' />
+              <field name='[P11-Competitor-Research.csv].[QLD]' />
+              <field name='[P11-Competitor-Research.csv].[VIC]' />
+              <field name='[P11-Competitor-Research.csv].[WA]' />
+            </group>
+          </groups>
+          <relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Company' ordinal='0' />
+              <column datatype='real' name='QLD' ordinal='1' />
+              <column datatype='real' name='WA' ordinal='2' />
+              <column datatype='real' name='VIC' ordinal='3' />
+              <column datatype='real' name='NSW' ordinal='4' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='string' name='Company' ordinal='0' />
-            <column datatype='real' name='QLD' ordinal='1' />
-            <column datatype='real' name='WA' ordinal='2' />
-            <column datatype='real' name='VIC' ordinal='3' />
-            <column datatype='real' name='NSW' ordinal='4' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='real' name='Pivot Field Values' />
           </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[NSW]' />
+            <value name='[QLD]' />
+            <value name='[VIC]' />
+            <value name='[WA]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[P11-Competitor-Research.csv].[NSW]' />
+              <field name='[P11-Competitor-Research.csv].[QLD]' />
+              <field name='[P11-Competitor-Research.csv].[VIC]' />
+              <field name='[P11-Competitor-Research.csv].[WA]' />
+            </group>
+          </groups>
+          <relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Company' ordinal='0' />
+              <column datatype='real' name='QLD' ordinal='1' />
+              <column datatype='real' name='WA' ordinal='2' />
+              <column datatype='real' name='VIC' ordinal='3' />
+              <column datatype='real' name='NSW' ordinal='4' />
+            </columns>
+          </relation>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <metadata-records>
           <metadata-record class='capability'>
@@ -79,48 +119,24 @@
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>QLD</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[QLD]</local-name>
-            <parent-name>[P11-Competitor-Research.csv]</parent-name>
-            <remote-alias>QLD</remote-alias>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
             <ordinal>1</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>WA</remote-name>
+            <remote-name>Pivot Field Values</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[WA]</local-name>
-            <parent-name>[P11-Competitor-Research.csv]</parent-name>
-            <remote-alias>WA</remote-alias>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
             <ordinal>2</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>VIC</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[VIC]</local-name>
-            <parent-name>[P11-Competitor-Research.csv]</parent-name>
-            <remote-alias>VIC</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>NSW</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[NSW]</local-name>
-            <parent-name>[P11-Competitor-Research.csv]</parent-name>
-            <remote-alias>NSW</remote-alias>
-            <ordinal>4</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
@@ -129,6 +145,8 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='State' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Net Profit Margin' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='P11-Competitor-Research.csv' datatype='table' name='[__tableau_internal_object_id__].[P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
@@ -138,14 +156,34 @@
         <objects>
           <object caption='P11-Competitor-Research.csv' id='P11-Competitor-Research.csv_47FF6C891EA0444FB4D8B8E6681C4C02'>
             <properties context=''>
-              <relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-                  <column datatype='string' name='Company' ordinal='0' />
-                  <column datatype='real' name='QLD' ordinal='1' />
-                  <column datatype='real' name='WA' ordinal='2' />
-                  <column datatype='real' name='VIC' ordinal='3' />
-                  <column datatype='real' name='NSW' ordinal='4' />
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='real' name='Pivot Field Values' />
                 </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[NSW]' />
+                  <value name='[QLD]' />
+                  <value name='[VIC]' />
+                  <value name='[WA]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[P11-Competitor-Research.csv].[NSW]' />
+                    <field name='[P11-Competitor-Research.csv].[QLD]' />
+                    <field name='[P11-Competitor-Research.csv].[VIC]' />
+                    <field name='[P11-Competitor-Research.csv].[WA]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.14yyj6k1dyeqdj0zvf86e0rdw4g2' name='P11-Competitor-Research.csv' table='[P11-Competitor-Research#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='Company' ordinal='0' />
+                    <column datatype='real' name='QLD' ordinal='1' />
+                    <column datatype='real' name='WA' ordinal='2' />
+                    <column datatype='real' name='VIC' ordinal='3' />
+                    <column datatype='real' name='NSW' ordinal='4' />
+                  </columns>
+                </relation>
               </relation>
             </properties>
           </object>
