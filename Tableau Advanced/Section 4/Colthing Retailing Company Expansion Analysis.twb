@@ -2495,12 +2495,16 @@
       <column datatype='string' hidden='true' name='[Pivot Field Names]' role='dimension' type='nominal' />
       <column caption='Population' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='Australian Demographic Stats' datatype='table' name='[__tableau_internal_object_id__].[Data1_65285A9BD08A492AB97EAD01E2750370]' role='measure' type='quantitative' />
+      <column-instance column='[F1]' derivation='Month' name='[mn:F1:ok]' pivot='key' type='ordinal' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <filter class='categorical' column='[Pivot Field Names - Split 1]' filter-group='2'>
         <groupfilter function='member' level='[Pivot Field Names - Split 1]' member='&quot;Persons&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[mn:F1:ok]' filter-group='2'>
+        <groupfilter function='member' level='[mn:F1:ok]' member='3' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
       </filter>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
