@@ -2425,6 +2425,7 @@
             <text x='0.5' y='0.5' />
           </annotation>
         </annotations>
+        <page-trail-options enabled='true' line-pattern='line-pattern-dashed' line-stroke-width='2' lines='true' mark-color='#898989' marks='false' />
       </table>
       <simple-id uuid='{117B1890-BBA3-4D29-B851-A3F62F6CE164}' />
     </worksheet>
