@@ -2203,6 +2203,47 @@
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
   </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='federated.08fljma07lzyak0zxr5wq1pf3vn5'>
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.0yp58fi0gu7ait194d1ug0lrbt49'>
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.13yyl2w01yva5b1dr1mfb1xr70y5'>
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='federated.17wj8i70r9si6e17f8xw00yow1sd'>
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column-instance column='[Country Code]' derivation='None' name='[none:Country Code:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='federated.17wj8i70r9si6e17f8xw00yow1sd' target='federated.08fljma07lzyak0zxr5wq1pf3vn5'>
+      <column-mapping>
+        <map key='[federated.17wj8i70r9si6e17f8xw00yow1sd].[none:Country Code:nk]' value='[federated.08fljma07lzyak0zxr5wq1pf3vn5].[none:Country Code:nk]' />
+        <map key='[federated.17wj8i70r9si6e17f8xw00yow1sd].[none:Pivot Field Names:nk]' value='[federated.08fljma07lzyak0zxr5wq1pf3vn5].[none:Pivot Field Names:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.17wj8i70r9si6e17f8xw00yow1sd' target='federated.0yp58fi0gu7ait194d1ug0lrbt49'>
+      <column-mapping>
+        <map key='[federated.17wj8i70r9si6e17f8xw00yow1sd].[none:Country Code:nk]' value='[federated.0yp58fi0gu7ait194d1ug0lrbt49].[none:Country Code:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+    <datasource-relationship source='federated.17wj8i70r9si6e17f8xw00yow1sd' target='federated.13yyl2w01yva5b1dr1mfb1xr70y5'>
+      <column-mapping>
+        <map key='[federated.17wj8i70r9si6e17f8xw00yow1sd].[none:Country Code:nk]' value='[federated.13yyl2w01yva5b1dr1mfb1xr70y5].[none:Country Code:nk]' />
+        <map key='[federated.17wj8i70r9si6e17f8xw00yow1sd].[none:Pivot Field Names:nk]' value='[federated.13yyl2w01yva5b1dr1mfb1xr70y5].[none:Pivot Field Names:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
   <worksheets>
     <worksheet name='Sheet 1'>
       <table>
