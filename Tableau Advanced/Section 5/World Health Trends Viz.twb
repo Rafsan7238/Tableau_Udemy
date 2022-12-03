@@ -21,7 +21,7 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='Metadata - Countries (P11-Country-Metadata)' inline='true' name='federated.0yp58fi0gu7ait194d1ug0lrbt49' version='18.1'>
+    <datasource caption='Metadata - Countries' inline='true' name='federated.0yp58fi0gu7ait194d1ug0lrbt49' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Country-Metadata' name='excel-direct.0e81o9h1ug6xd314qoa5a0131lbm'>
@@ -171,7 +171,7 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='Data (P11-Country-Population)' inline='true' name='federated.17wj8i70r9si6e17f8xw00yow1sd' version='18.1'>
+    <datasource caption='Country-Population' inline='true' name='federated.17wj8i70r9si6e17f8xw00yow1sd' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Country-Population' name='excel-direct.05w2m4t1gvvlea14jvpuw0cpj60r'>
@@ -652,14 +652,14 @@
       <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
       <column caption='Population' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_FBA50829682648A88C38DD150B99571B]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Population Table' datatype='table' name='[__tableau_internal_object_id__].[Data_FBA50829682648A88C38DD150B99571B]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='Data' id='Data_FBA50829682648A88C38DD150B99571B'>
+          <object caption='Population Table' id='Data_FBA50829682648A88C38DD150B99571B'>
             <properties context=''>
               <relation name='Pivot' type='pivot'>
                 <columns>
@@ -848,7 +848,7 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='Data (P11-Fertility-Rate)' inline='true' name='federated.08fljma07lzyak0zxr5wq1pf3vn5' version='18.1'>
+    <datasource caption='Fertility-Rate' inline='true' name='federated.08fljma07lzyak0zxr5wq1pf3vn5' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Fertility-Rate' name='excel-direct.1ie4dma1f98d6k16w91yc0nvketa'>
@@ -1329,14 +1329,14 @@
       <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
       <column caption='Fertility Rate' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_26F6B1A85E2D411199A74224A1A83109]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Fertility Rate Table' datatype='table' name='[__tableau_internal_object_id__].[Data_26F6B1A85E2D411199A74224A1A83109]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='Data' id='Data_26F6B1A85E2D411199A74224A1A83109'>
+          <object caption='Fertility Rate Table' id='Data_26F6B1A85E2D411199A74224A1A83109'>
             <properties context=''>
               <relation name='Pivot' type='pivot'>
                 <columns>
@@ -1525,7 +1525,7 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
-    <datasource caption='Data (P11-Life-Expectancy-At-Birth)' inline='true' name='federated.13yyl2w01yva5b1dr1mfb1xr70y5' version='18.1'>
+    <datasource caption='Life-Expectancy-At-Birth' inline='true' name='federated.13yyl2w01yva5b1dr1mfb1xr70y5' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Life-Expectancy-At-Birth' name='excel-direct.0v0zdfb19uubrh1etrue81wbkrz3'>
@@ -2006,14 +2006,14 @@
       <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
       <column caption='Life Expectancy' datatype='real' name='[Pivot Field Values]' role='measure' type='quantitative' />
-      <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_2B57749003F1450CA88574C1AA8E93A0]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Life Expectancy Table' datatype='table' name='[__tableau_internal_object_id__].[Data_2B57749003F1450CA88574C1AA8E93A0]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='Data' id='Data_2B57749003F1450CA88574C1AA8E93A0'>
+          <object caption='Life Expectancy Table' id='Data_2B57749003F1450CA88574C1AA8E93A0'>
             <properties context=''>
               <relation name='Pivot' type='pivot'>
                 <columns>
@@ -2225,7 +2225,7 @@
       <simple-id uuid='{117B1890-BBA3-4D29-B851-A3F62F6CE164}' />
     </worksheet>
   </worksheets>
-  <windows source-height='30'>
+  <windows source-height='93'>
     <window class='worksheet' maximized='true' name='Sheet 1'>
       <cards>
         <edge name='left'>
