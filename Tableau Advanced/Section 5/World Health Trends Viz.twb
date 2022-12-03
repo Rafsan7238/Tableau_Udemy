@@ -650,6 +650,8 @@
       <aliases enabled='yes' />
       <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
       <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Year' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='Data' datatype='table' name='[__tableau_internal_object_id__].[Data_FBA50829682648A88C38DD150B99571B]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
