@@ -561,6 +561,8 @@
               <calculation class='tableau' formula='IIF(MIN([Calculation_5253589742730452993] &gt; 0.5), &apos;Yes&apos;, &apos;No&apos;)' />
             </column>
             <column datatype='integer' name='[Store ID]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Store Name]' role='dimension' type='nominal' />
+            <column-instance column='[Store Name]' derivation='Attribute' name='[attr:Store Name:nk]' pivot='key' type='nominal' />
             <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
             <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
             <column aggregation='Avg' datatype='real' name='[latitude (Sheet11)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
@@ -620,6 +622,7 @@
               <color column='[federated.050jiez17eurt51e0xm4p1xyzobn].[usr:Calculation_5253589742730932226:nk]' />
               <size column='[federated.050jiez17eurt51e0xm4p1xyzobn].[min:Calculation_5253589742730452993:qk]' />
               <lod column='[federated.050jiez17eurt51e0xm4p1xyzobn].[none:Store ID:ok]' />
+              <tooltip column='[federated.050jiez17eurt51e0xm4p1xyzobn].[attr:Store Name:nk]' />
             </encodings>
             <style>
               <style-rule element='mark'>
@@ -893,6 +896,7 @@
         <highlight>
           <color-one-way>
             <field>[federated.050jiez17eurt51e0xm4p1xyzobn].[none:Store ID:ok]</field>
+            <field>[federated.050jiez17eurt51e0xm4p1xyzobn].[none:Store Name:nk]</field>
             <field>[federated.050jiez17eurt51e0xm4p1xyzobn].[usr:Calculation_5253589742730932226:nk]</field>
           </color-one-way>
         </highlight>
