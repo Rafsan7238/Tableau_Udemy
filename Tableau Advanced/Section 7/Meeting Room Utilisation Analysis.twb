@@ -6,6 +6,7 @@
     <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
@@ -20,19 +21,230 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='P11-Meeting-Rooms' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
+    <datasource caption='Rooms+ (P11-Meeting-Rooms)' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Meeting-Rooms' name='excel-direct.0in2va30grpbcq1bujeaw06efply'>
             <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 7/P11-Meeting-Rooms.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Rooms].[Room]' />
+              <expression op='[Room Shapes].[Room]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Rooms' table='[Rooms$]' type='table'>
+            <columns gridOrigin='A1:B11:no:A1:B11:0' header='yes' outcome='6'>
+              <column datatype='string' name='Room' ordinal='0' />
+              <column datatype='string' name='Floor' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Room Shapes' table='[&apos;Room Shapes$&apos;]' type='table'>
+            <columns gridOrigin='A1:D129:no:A1:D129:0' header='yes' outcome='6'>
+              <column datatype='string' name='Room' ordinal='0' />
+              <column datatype='integer' name='Path' ordinal='1' />
+              <column datatype='real' name='x' ordinal='2' />
+              <column datatype='real' name='y' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[Rooms].[Room]' />
+              <expression op='[Room Shapes].[Room]' />
+            </expression>
+          </clause>
+          <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Rooms' table='[Rooms$]' type='table'>
+            <columns gridOrigin='A1:B11:no:A1:B11:0' header='yes' outcome='6'>
+              <column datatype='string' name='Room' ordinal='0' />
+              <column datatype='string' name='Floor' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Room Shapes' table='[&apos;Room Shapes$&apos;]' type='table'>
+            <columns gridOrigin='A1:D129:no:A1:D129:0' header='yes' outcome='6'>
+              <column datatype='string' name='Room' ordinal='0' />
+              <column datatype='integer' name='Path' ordinal='1' />
+              <column datatype='real' name='x' ordinal='2' />
+              <column datatype='real' name='y' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Floor]' value='[Rooms].[Floor]' />
+          <map key='[Path]' value='[Room Shapes].[Path]' />
+          <map key='[Room (Room Shapes)]' value='[Room Shapes].[Room]' />
+          <map key='[Room]' value='[Rooms].[Room]' />
+          <map key='[x]' value='[Room Shapes].[x]' />
+          <map key='[y]' value='[Room Shapes].[y]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Rooms]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B11:no:A1:B11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Room Shapes]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D129:no:A1:D129:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Room</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Room]</local-name>
+            <parent-name>[Rooms]</parent-name>
+            <remote-alias>Room</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Floor</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Floor]</local-name>
+            <parent-name>[Rooms]</parent-name>
+            <remote-alias>Floor</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Room</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Room (Room Shapes)]</local-name>
+            <parent-name>[Room Shapes]</parent-name>
+            <remote-alias>Room</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Path</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Path]</local-name>
+            <parent-name>[Room Shapes]</parent-name>
+            <remote-alias>Path</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>x</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[x]</local-name>
+            <parent-name>[Room Shapes]</parent-name>
+            <remote-alias>x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[y]</local-name>
+            <parent-name>[Room Shapes]</parent-name>
+            <remote-alias>y</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Rooms_D2197659E9F84CD0BFB6A41C76881592]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
       </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' hidden='true' name='[Room (Room Shapes)]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Rooms' datatype='table' name='[__tableau_internal_object_id__].[Rooms_D2197659E9F84CD0BFB6A41C76881592]' role='measure' type='quantitative' />
+      <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
+      <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Rooms' id='Rooms_D2197659E9F84CD0BFB6A41C76881592'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[Rooms].[Room]' />
+                    <expression op='[Room Shapes].[Room]' />
+                  </expression>
+                </clause>
+                <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Rooms' table='[Rooms$]' type='table'>
+                  <columns gridOrigin='A1:B11:no:A1:B11:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Room' ordinal='0' />
+                    <column datatype='string' name='Floor' ordinal='1' />
+                  </columns>
+                </relation>
+                <relation connection='excel-direct.0in2va30grpbcq1bujeaw06efply' name='Room Shapes' table='[&apos;Room Shapes$&apos;]' type='table'>
+                  <columns gridOrigin='A1:D129:no:A1:D129:0' header='yes' outcome='6'>
+                    <column datatype='string' name='Room' ordinal='0' />
+                    <column datatype='integer' name='Path' ordinal='1' />
+                    <column datatype='real' name='x' ordinal='2' />
+                    <column datatype='real' name='y' ordinal='3' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
   </datasources>
   <worksheets>
