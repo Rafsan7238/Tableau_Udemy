@@ -503,7 +503,7 @@
                 <run bold='true' fontsize='16'><![CDATA[<[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Room:nk]>]]></run>
                 <run>Æ&#10;</run>
                 <run fontcolor='#787878'>&lt;[Parameters].[Parameter 2]&gt;&#9;</run>
-                <run bold='true'><![CDATA[<[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]>]]></run>
+                <run bold='true'><![CDATA[<[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]>%]]></run>
               </formatted-text>
             </customized-tooltip>
             <style>
