@@ -217,6 +217,9 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='Floor Image Selection' datatype='string' name='[Calculation_5089489831295283200]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+      </column>
       <column aggregation='Sum' datatype='integer' name='[Path]' role='dimension' type='ordinal' />
       <column datatype='string' hidden='true' name='[Room (Room Shapes)]' role='dimension' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='Rooms + Shapes' datatype='table' name='[__tableau_internal_object_id__].[Rooms_D2197659E9F84CD0BFB6A41C76881592]' role='measure' type='quantitative' />
@@ -231,6 +234,11 @@
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Ground&quot;'>
+          <calculation class='tableau' formula='&quot;Ground&quot;' />
+        </column>
+      </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
           <object caption='Rooms + Shapes' id='Rooms_D2197659E9F84CD0BFB6A41C76881592'>
@@ -463,7 +471,7 @@
       <simple-id uuid='{1B147DD3-8545-4807-B741-FB10554BD311}' />
     </worksheet>
   </worksheets>
-  <windows source-height='48'>
+  <windows source-height='51'>
     <window class='worksheet' maximized='true' name='Meeting Room Map'>
       <cards>
         <edge name='left'>
