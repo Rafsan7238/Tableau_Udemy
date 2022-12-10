@@ -21,6 +21,16 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;First&quot;'>
+        <calculation class='tableau' formula='&quot;First&quot;' />
+        <members>
+          <member value='&quot;First&quot;' />
+          <member value='&quot;Ground&quot;' />
+        </members>
+      </column>
+    </datasource>
     <datasource caption='Meeting Rooms + Shapes' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -355,7 +365,7 @@
       </connection>
       <aliases enabled='yes' />
       <_.fcp.ObjectModelTableType.true...column caption='Meeting Room Utilisation' datatype='table' name='[__tableau_internal_object_id__].[Meeting Room Utilisation_F1C64C243E304C57B266A0523CDEE3C8]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.292517' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.707483' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -438,7 +448,7 @@
       <simple-id uuid='{1B147DD3-8545-4807-B741-FB10554BD311}' />
     </worksheet>
   </worksheets>
-  <windows source-height='51'>
+  <windows source-height='48'>
     <window class='worksheet' maximized='true' name='Meeting Room Map'>
       <cards>
         <edge name='left'>
@@ -448,6 +458,7 @@
             <card type='marks' />
             <card mode='radiolist' param='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]' show-all='false' type='filter' />
             <card pane-specification-id='0' param='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
           </strip>
         </edge>
         <edge name='top'>
