@@ -450,6 +450,9 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column aggregation='Attribute' caption='LOD Exclude State Profit' datatype='integer' name='[Calculation_4801048348872060928]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{EXCLUDE [City] : SUM([Profit])}' />
+      </column>
       <column caption='LOD INCLUDE City Profit' datatype='integer' name='[Calculation_735353415857713152]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='{INCLUDE [City] : SUM([Profit])}' />
       </column>
