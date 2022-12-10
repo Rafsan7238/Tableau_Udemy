@@ -23,8 +23,8 @@
   <datasources>
     <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
       <aliases enabled='yes' />
-      <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;First&quot;'>
-        <calculation class='tableau' formula='&quot;First&quot;' />
+      <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Ground&quot;'>
+        <calculation class='tableau' formula='&quot;Ground&quot;' />
         <members>
           <member value='&quot;First&quot;' />
           <member value='&quot;Ground&quot;' />
@@ -394,7 +394,13 @@
           <datasources>
             <datasource caption='Meeting Rooms + Shapes' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' />
             <datasource caption='Meeting Room Utilisation (P11-Meeting-Rooms-Utilisation)' name='federated.14d5jft1w222qh10qfobd0fiq54q' />
+            <datasource name='Parameters' />
           </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Ground&quot;'>
+              <calculation class='tableau' formula='&quot;Ground&quot;' />
+            </column>
+          </datasource-dependencies>
           <datasource-dependencies datasource='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6'>
             <column datatype='string' name='[Floor]' role='dimension' type='nominal' />
             <column aggregation='Sum' datatype='integer' name='[Path]' role='dimension' type='ordinal' />
@@ -412,7 +418,16 @@
             <column-instance column='[Booked Utilisation]' derivation='Avg' name='[avg:Booked Utilisation:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]'>
-            <groupfilter function='member' level='[none:Floor:nk]' member='&quot;Ground&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Floor])' function='order' user:ui-marker='order'>
+                <groupfilter expression='[Floor] = [Parameters].[Parameter 1]' function='filter' user:ui-marker='filter-by'>
+                  <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                    <groupfilter function='level-members' level='[none:Floor:nk]' />
+                    <groupfilter function='member' level='[none:Floor:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
           </filter>
           <slices>
             <column>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]</column>
@@ -456,9 +471,8 @@
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
-            <card mode='radiolist' param='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]' show-all='false' type='filter' />
             <card pane-specification-id='0' param='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' type='color' />
-            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
           </strip>
         </edge>
         <edge name='top'>
