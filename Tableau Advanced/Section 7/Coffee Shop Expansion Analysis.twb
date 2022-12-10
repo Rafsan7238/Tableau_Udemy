@@ -488,6 +488,9 @@
       <column caption='Distance' datatype='real' name='[Calculation_5253589742730452993]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='3959 * ACOS(&#10;SIN(RADIANS([latitude])) * SIN(RADIANS([latitude (Sheet11)])) +&#10;COS(RADIANS([latitude])) * COS(RADIANS([latitude (Sheet11)])) *&#10;COS(RADIANS([longitude (Sheet11)]) - RADIANS([longitude])))' />
       </column>
+      <column caption='Too Far' datatype='string' name='[Calculation_5253589742730932226]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='IIF(MIN([Calculation_5253589742730452993] &gt; 0.5), &apos;Yes&apos;, &apos;No&apos;)' />
+      </column>
       <column datatype='integer' name='[Store ID (Sheet11)]' role='dimension' type='ordinal' />
       <column datatype='integer' name='[Store ID]' role='dimension' type='ordinal' />
       <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_663423D4F0DB411C9CAFE2B823CAD5AB]' role='measure' type='quantitative' />
