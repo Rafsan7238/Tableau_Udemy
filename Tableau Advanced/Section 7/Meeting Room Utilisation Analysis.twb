@@ -21,7 +21,7 @@
     </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
   </_.fcp.AnimationOnByDefault.false...style>
   <datasources>
-    <datasource caption='Rooms+ (P11-Meeting-Rooms)' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
+    <datasource caption='Meeting Rooms + Shapes' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='P11-Meeting-Rooms' name='excel-direct.0in2va30grpbcq1bujeaw06efply'>
@@ -208,7 +208,7 @@
       </connection>
       <aliases enabled='yes' />
       <column datatype='string' hidden='true' name='[Room (Room Shapes)]' role='dimension' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='Rooms' datatype='table' name='[__tableau_internal_object_id__].[Rooms_D2197659E9F84CD0BFB6A41C76881592]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Rooms + Shapes' datatype='table' name='[__tableau_internal_object_id__].[Rooms_D2197659E9F84CD0BFB6A41C76881592]' role='measure' type='quantitative' />
       <column caption='X' datatype='real' name='[x]' role='measure' type='quantitative' />
       <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
@@ -217,7 +217,7 @@
       </semantic-values>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
-          <object caption='Rooms' id='Rooms_D2197659E9F84CD0BFB6A41C76881592'>
+          <object caption='Rooms + Shapes' id='Rooms_D2197659E9F84CD0BFB6A41C76881592'>
             <properties context=''>
               <relation join='inner' type='join'>
                 <clause type='join'>
