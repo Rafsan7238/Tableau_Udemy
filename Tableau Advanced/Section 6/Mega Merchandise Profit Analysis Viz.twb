@@ -458,6 +458,9 @@
       </column>
       <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='LOD FIXED City Profit' datatype='integer' name='[LOD INCLUDE City Profit (copy)_4801048348880986119]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Country], [State], [City] : SUM([Profit])}' />
+      </column>
       <column aggregation='Sum' datatype='integer' default-format='*00000' name='[Postal Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
       <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='Orders' datatype='table' name='[__tableau_internal_object_id__].[ListOfOrders_EE3E7EE8735F41BDB9B9EAE3CB1F8260]' role='measure' type='quantitative' />
