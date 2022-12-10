@@ -458,6 +458,9 @@
       </column>
       <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='LOD FIXED State Profit' datatype='integer' name='[LOD Exclude State Profit (copy)_4801048348882579464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Country], [State] : SUM([Profit])}' />
+      </column>
       <column caption='LOD FIXED City Profit' datatype='integer' name='[LOD INCLUDE City Profit (copy)_4801048348880986119]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='{FIXED [Country], [State], [City] : SUM([Profit])}' />
       </column>
