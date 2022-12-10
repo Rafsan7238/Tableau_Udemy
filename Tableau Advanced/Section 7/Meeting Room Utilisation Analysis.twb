@@ -249,7 +249,7 @@
     </datasource>
   </datasources>
   <worksheets>
-    <worksheet name='Meeting Room Map LG'>
+    <worksheet name='Meeting Room Map'>
       <table>
         <view>
           <datasources>
@@ -295,13 +295,14 @@
     </worksheet>
   </worksheets>
   <windows source-height='30'>
-    <window class='worksheet' maximized='true' name='Meeting Room Map LG'>
+    <window class='worksheet' maximized='true' name='Meeting Room Map'>
       <cards>
         <edge name='left'>
           <strip size='160'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
+            <card mode='radiolist' param='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]' show-all='false' type='filter' />
           </strip>
         </edge>
         <edge name='top'>
@@ -329,7 +330,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='384' name='Meeting Room Map LG' width='384'>
+    <thumbnail height='384' name='Meeting Room Map' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nO3dWWwcd34n8G9V36Qoks1DFEVSJEWJ1C1Rsi6L8Qi2FUUjX9DYcZLZ5GGC
       BRbBAgF2AwTYPMzTIJinfdkcO0gQJDPeGY2lsceHZGsoUaZ1WSdFiYck3pd4qptHd9e9Dwxr
