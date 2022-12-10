@@ -30,11 +30,11 @@
           <member value='&quot;Ground&quot;' />
         </members>
       </column>
-      <column caption='Select Visualisation' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Actual&quot;'>
-        <calculation class='tableau' formula='&quot;Actual&quot;' />
+      <column caption='Select Visualisation' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Booked&quot;'>
+        <calculation class='tableau' formula='&quot;Booked&quot;' />
         <members>
           <member value='&quot;Actual&quot;' />
-          <member value='&quot;Utilisation&quot;' />
+          <member value='&quot;Booked&quot;' />
         </members>
       </column>
     </datasource>
@@ -388,11 +388,19 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='Utilisation' datatype='integer' name='[Calculation_5089489831297036290]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([Parameters].[Parameter 2] = &quot;Actual&quot;, [Actual Utilisation], [Booked Utilisation])' />
+      </column>
       <_.fcp.ObjectModelTableType.true...column caption='Meeting Room Utilisation' datatype='table' name='[__tableau_internal_object_id__].[Meeting Room Utilisation_F1C64C243E304C57B266A0523CDEE3C8]' role='measure' type='quantitative' />
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.292308' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.707692' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Visualisation' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Booked&quot;'>
+          <calculation class='tableau' formula='&quot;Booked&quot;' />
+        </column>
+      </datasource-dependencies>
       <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
         <objects>
           <object caption='Meeting Room Utilisation' id='Meeting Room Utilisation_F1C64C243E304C57B266A0523CDEE3C8'>
@@ -424,6 +432,9 @@
             <column caption='Select Floor' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;Ground&quot;'>
               <calculation class='tableau' formula='&quot;Ground&quot;' />
             </column>
+            <column caption='Select Visualisation' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Booked&quot;'>
+              <calculation class='tableau' formula='&quot;Booked&quot;' />
+            </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6'>
             <column caption='Floor Image Selection' datatype='string' name='[Calculation_5089489831295283200]' role='dimension' type='nominal'>
@@ -442,8 +453,12 @@
             <column caption='Y' datatype='real' name='[y]' role='measure' type='quantitative' />
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.14d5jft1w222qh10qfobd0fiq54q'>
+            <column datatype='integer' name='[Actual Utilisation]' role='measure' type='quantitative' />
             <column datatype='integer' name='[Booked Utilisation]' role='measure' type='quantitative' />
-            <column-instance column='[Booked Utilisation]' derivation='Avg' name='[avg:Booked Utilisation:qk]' pivot='key' type='quantitative' />
+            <column caption='Utilisation' datatype='integer' name='[Calculation_5089489831297036290]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IIF([Parameters].[Parameter 2] = &quot;Actual&quot;, [Actual Utilisation], [Booked Utilisation])' />
+            </column>
+            <column-instance column='[Calculation_5089489831297036290]' derivation='Avg' name='[avg:Calculation_5089489831297036290:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]'>
             <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
@@ -464,7 +479,7 @@
         </view>
         <style>
           <style-rule element='mark'>
-            <encoding attr='color' field='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' max='100.0' min='0.0' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]' max='100.0' min='0.0' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
           </style-rule>
         </style>
         <panes>
@@ -474,7 +489,7 @@
             </view>
             <mark class='Polygon' />
             <encodings>
-              <color column='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' />
+              <color column='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]' />
               <lod column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Room:nk]' />
               <lod column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Calculation_5089489831295283200:nk]' />
               <path column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Path:ok]' />
@@ -500,7 +515,7 @@
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
-            <card pane-specification-id='0' param='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]' type='color' />
             <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
             <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
           </strip>
@@ -525,7 +540,7 @@
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]</field>
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Path:ok]</field>
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Room:nk]</field>
-            <field>[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]</field>
+            <field>[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Calculation_5089489831297036290:qk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
