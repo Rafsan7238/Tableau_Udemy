@@ -485,6 +485,9 @@
       <column caption='Distance_New' datatype='real' name='[Calculation_5253589742729781248]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='DISTANCE(&#10;MAKEPOINT([latitude (Sheet11)], [longitude (Sheet11)]),&#10;MAKEPOINT([latitude], [longitude]),&#10;&apos;mi&apos;)' />
       </column>
+      <column caption='Distance' datatype='real' name='[Calculation_5253589742730452993]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='3959 * ACOS(&#10;SIN(RADIANS([latitude])) * SIN(RADIANS([latitude (Sheet11)])) +&#10;COS(RADIANS([latitude])) * COS(RADIANS([latitude (Sheet11)])) *&#10;COS(RADIANS([longitude (Sheet11)]) - RADIANS([longitude])))' />
+      </column>
       <column datatype='integer' name='[Store ID (Sheet11)]' role='dimension' type='ordinal' />
       <column datatype='integer' name='[Store ID]' role='dimension' type='ordinal' />
       <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_663423D4F0DB411C9CAFE2B823CAD5AB]' role='measure' type='quantitative' />
