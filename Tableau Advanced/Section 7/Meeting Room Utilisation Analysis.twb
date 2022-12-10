@@ -228,6 +228,9 @@
       <mapped-images>
         <mapped-image caption='Ground Floor' expression='file:///Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 7/P11-Office-Floor-Plan-Ground-Floor.jpg' name='[MappedImage1]'>
           <mapping bottom='0.0' left='0.0' right='2481.0' top='1754.0' x='[x]' y='[y]' />
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[Calculation_5089489831295283200]' member='&quot;Ground&quot;' />
+          </groupfilter>
         </mapped-image>
       </mapped-images>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
@@ -410,9 +413,13 @@
             </column>
           </datasource-dependencies>
           <datasource-dependencies datasource='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6'>
+            <column caption='Floor Image Selection' datatype='string' name='[Calculation_5089489831295283200]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='[Parameters].[Parameter 1]' />
+            </column>
             <column datatype='string' name='[Floor]' role='dimension' type='nominal' />
             <column aggregation='Sum' datatype='integer' name='[Path]' role='dimension' type='ordinal' />
             <column datatype='string' name='[Room]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_5089489831295283200]' derivation='None' name='[none:Calculation_5089489831295283200:nk]' pivot='key' type='nominal' />
             <column-instance column='[Floor]' derivation='None' name='[none:Floor:nk]' pivot='key' type='nominal' />
             <column-instance column='[Path]' derivation='None' name='[none:Path:ok]' pivot='key' type='ordinal' />
             <column-instance column='[Room]' derivation='None' name='[none:Room:nk]' pivot='key' type='nominal' />
@@ -456,6 +463,7 @@
             <encodings>
               <color column='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' />
               <lod column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Room:nk]' />
+              <lod column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Calculation_5089489831295283200:nk]' />
               <path column='[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Path:ok]' />
             </encodings>
             <style>
@@ -499,6 +507,7 @@
         <zoom type='entire-view' />
         <highlight>
           <color-one-way>
+            <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Calculation_5089489831295283200:nk]</field>
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Floor:nk]</field>
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Path:ok]</field>
             <field>[federated.0hb6kqh0nwvjbg1bw5bc71bl78p6].[none:Room:nk]</field>
