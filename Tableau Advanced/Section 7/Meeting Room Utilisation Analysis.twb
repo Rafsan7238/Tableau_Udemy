@@ -232,8 +232,14 @@
             <groupfilter function='member' level='[Calculation_5089489831295283200]' member='&quot;Ground&quot;' />
           </groupfilter>
         </mapped-image>
+        <mapped-image caption='First Floor' expression='file:///Users/rafsanalmamun/Downloads/Tableau_Udemy/Tableau Advanced/Section 7/P11-Office-Floor-Plan-1st-Floor.jpg' name='[MappedImage2]'>
+          <mapping bottom='0.0' left='0.0' right='2481.0' top='1754.0' x='[x]' y='[y]' />
+          <groupfilter function='crossjoin'>
+            <groupfilter function='member' level='[Calculation_5089489831295283200]' member='&quot;First&quot;' />
+          </groupfilter>
+        </mapped-image>
       </mapped-images>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.463248' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.536752' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
