@@ -30,6 +30,13 @@
           <member value='&quot;Ground&quot;' />
         </members>
       </column>
+      <column caption='Select Visualisation' datatype='string' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='&quot;Actual&quot;'>
+        <calculation class='tableau' formula='&quot;Actual&quot;' />
+        <members>
+          <member value='&quot;Actual&quot;' />
+          <member value='&quot;Utilisation&quot;' />
+        </members>
+      </column>
     </datasource>
     <datasource caption='Meeting Rooms + Shapes' inline='true' name='federated.0hb6kqh0nwvjbg1bw5bc71bl78p6' version='18.1'>
       <connection class='federated'>
@@ -382,7 +389,7 @@
       </connection>
       <aliases enabled='yes' />
       <_.fcp.ObjectModelTableType.true...column caption='Meeting Room Utilisation' datatype='table' name='[__tableau_internal_object_id__].[Meeting Room Utilisation_F1C64C243E304C57B266A0523CDEE3C8]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.292517' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.707483' show-structure='true' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.292308' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.707692' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -495,6 +502,7 @@
             <card type='marks' />
             <card pane-specification-id='0' param='[federated.14d5jft1w222qh10qfobd0fiq54q].[avg:Booked Utilisation:qk]' type='color' />
             <card mode='list' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
           </strip>
         </edge>
         <edge name='top'>
