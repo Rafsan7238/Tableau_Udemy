@@ -745,7 +745,7 @@
                 <run fontcolor='#787878'>State:&#9;</run>
                 <run bold='true'><![CDATA[<[federated.19s1r0y0gnzxgt0zvpfnt14i3qp3].[none:State:nk]>]]></run>
                 <run>Æ&#10;</run>
-                <run fontcolor='#787878'>Avg. City Profit:&#9;</run>
+                <run fontcolor='#787878'>Avg. Profit Across Cities:&#9;</run>
                 <run bold='true'><![CDATA[<[federated.19s1r0y0gnzxgt0zvpfnt14i3qp3].[avg:Calculation_735353415857713152:qk]>]]></run>
               </formatted-text>
             </customized-tooltip>
